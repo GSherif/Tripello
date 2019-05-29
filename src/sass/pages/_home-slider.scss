@@ -1,0 +1,12 @@
+.home-slider{
+        @media screen and (min-width: 767.98px) {
+        max-height: 560px;
+    }
+    overflow: hidden;
+      &__heading{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        color: white;
+    }
+}

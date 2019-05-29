@@ -1,0 +1,17 @@
+.dropdown{
+    &__content{
+        display: none;
+    }
+    &:hover
+    {
+        .dropdown__content
+        {
+            display: block;
+        }
+    }
+}
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+.card-img-top
+{
+    position: relative;   
+} 

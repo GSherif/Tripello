@@ -1,0 +1,38 @@
+.card
+{
+    position: relative;
+    .card-text
+    {
+        i.fas {color:yellow;}
+        span{color:grey;}
+    }
+    &:hover
+        {
+            
+            margin-top: -0.5rem;
+            transition: all 0.3s ease-in-out 0s;
+        }
+    h4
+    {
+        position: absolute;
+        top:55%; 
+        left: 5%;
+        color:white;
+    }
+    h6 
+    {
+        position: absolute;
+        top:66%;
+        left:5%;
+        color:white;
+
+    }
+    i.far
+    {
+        position: absolute;
+        top:65%; 
+        right: 15%;
+        color: white;
+        font-size: 20px;
+    }   
+}

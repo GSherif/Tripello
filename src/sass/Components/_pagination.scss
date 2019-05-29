@@ -1,0 +1,8 @@
+.paging{
+    display: flex;
+    justify-content: center !important;
+    margin-top: 0.7rem;
+    &__page-link{
+        color: $trip-primary !important;
+    }
+}  

@@ -1,0 +1,13 @@
+.tab-active
+{
+    a 
+    {
+        color:black;
+    }
+
+    a:focus
+    {
+        color:#0056b3;
+        background-color: lightgray;
+    }
+}

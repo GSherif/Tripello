@@ -1,0 +1,21 @@
+.country-slider{
+    // height: 450px;
+    @media screen and (min-width: 767.98px) {
+        max-height: 381px;
+        // max-height: 50px;
+        // top: -100px;
+    }
+    overflow: hidden;
+    img{
+        // height: 80%;
+        // max-height: 281px;
+        // height: 100%;
+        // overflow: hidden;
+    }
+    &__heading{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        color: white;
+    }
+}

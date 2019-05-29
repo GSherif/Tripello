@@ -1,0 +1,176 @@
+.img--height{
+    height: 8rem;
+    width: 50% !important
+}
+// .hover:hover{
+//     background-color: black;
+//     opacity: 20% !important;
+// }
+.slider-img{
+    height: 24rem;
+    padding-right: 0px !important; 
+    padding-left: 0px !important;
+}
+.Gallery{
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: antiquewhite;
+    // padding-left: 16rem;
+}
+.col-1{
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+}
+.col-8{
+         padding-left: 0px !important;
+}
+.card-overlay__header{
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+.txt{
+    margin-bottom: 0rem;
+}
+.contain{
+    width: 82% !important;
+    align-self: flex-end !important;
+}
+.row{
+    margin-right: 0px !important;
+}
+.facilitiesSection{
+    background-color: #072634;
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 45px;
+        .facilities{
+            height: 230px;
+            width: 200px;
+            border-color:#C9BC89;
+            background-color: #072634;
+            justify-content: center;
+            .innerCard{
+                position: relative;
+                margin: auto;
+                border-radius: 25%;
+                height: 130px;
+                width: 130px;
+                background-color: #072634;
+                border:solid 2px #C9BC89;
+                transform: rotate(45deg);
+                .fa-swimming-pool{
+                    color: #C9BC89;
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                }
+            }
+            .fac-word{
+                color: #C9BC89;
+            }
+        }
+    }
+}
+.reasons-section{
+    background-color: #F2F6FC;
+    height: 200px;
+    margin: 40px;
+    .rows{
+         margin: 35px;
+    .col-6{
+        display: flex;
+        .circle--blue{
+
+            background-color: #ACC6D4;
+        }
+        .circle--red{
+
+            background-color: #A74141;
+        }
+        .circle--yellow{
+
+            background-color: #705775;
+        }
+        .circle--green{
+
+            background-color: white;
+        }
+    .circle{
+        border-radius: 100%;
+        height: 30px;
+        width: 30px;
+    }
+}
+}
+}
+.places-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.fa-chevron-right{
+    color: #ACC6D4 !important;
+}
+.Guest--img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+.review{
+    margin: 20px;
+    height: 275px;
+    overflow: scroll;
+}
+.cont{
+    background-color: #ACC6D4;
+    padding: 25px;
+.review-from{
+    width: 600px;
+    margin: auto;
+}
+}
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+p{
+    color: black;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

@@ -1,0 +1,49 @@
+.trip-card {
+    padding: 30px 30px 25px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: solid 1px #f0eded;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    &::before {
+        content: "";
+        background-color: $light-grey;
+        width: 2px;
+        height: 50px;
+        margin-top: -50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__time {
+        float: left;
+    }
+
+    &__details {
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .rating {
+            i.fas {
+                color: #ffc000;
+            }
+        }
+
+        .tag {
+            color: $light-grey;
+        }
+
+        .details-text {
+            color: $dark-grey;
+        }
+    }
+}
