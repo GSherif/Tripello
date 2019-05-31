@@ -6,6 +6,12 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 import { LoginComponent } from './shared/login/login.component';
 import { SignupComponent } from './shared/signup/signup.component';
+import { CountriesComponent } from './feature/countries/countries.component';
+import { CountryItemComponent } from './feature/countries/country-item/country-item.component';
+import { CountryListingComponent } from './feature/countries/country-listing/country-listing.component';
+import { CitiesComponent } from './feature/cities/cities.component';
+import { CityItemComponent } from './feature/cities/city-item/city-item.component';
+import { CityListingComponent } from './feature/cities/city-listing/city-listing.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +19,13 @@ import { SignupComponent } from './shared/signup/signup.component';
     FooterComponent,
     HeaderComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    CountriesComponent,
+    CountryItemComponent,
+    CountryListingComponent,
+    CitiesComponent,
+    CityItemComponent,
+    CityListingComponent
   ],
   imports: [
     BrowserModule
