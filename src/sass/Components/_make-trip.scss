@@ -25,6 +25,8 @@
         margin-top: 0.4rem;
         font-family: $secondry-font;
         color: $trip-header-text;
+        margin-left: 0.4rem;
+        margin-bottom: 1.4rem;
     }
     &__btn-dropdwon {
         outline: none;
@@ -35,9 +37,12 @@
     &__category-content {
         // border: 1px white solid;
     }
-    &--icons-and-text {
+    &--text {
         color: $trip-tabs-icons-txt;
         font-family: $secondry-font;
+    }
+    &--icons {
+        color: $trip-tabs-icons-txt;
     }
     &__text-header {
         color: $trip-header-text;
@@ -50,5 +55,12 @@
     }
     &__order-day {
         margin-left: 0rem;
+    }
+    &__tools {
+        display: flex;
+    }
+    &--plus-icon {
+        margin-top: 0.7rem;
+        margin-left: 0.7rem;
     }
 }

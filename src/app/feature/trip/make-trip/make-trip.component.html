@@ -1,0 +1,9 @@
+<app-dropdown>
+
+    <option *ngFor="let country of countries; let i=index" [value]="country.id">{{country.name}}</option>
+
+</app-dropdown>
+
+<app-dropdown>
+    <option *ngFor="let city of cities; let i=index" [value]="city.id">{{city.name}}</option>
+</app-dropdown>
