@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{CountryService} from './feature/countries/country.service';
 import{CityService} from './feature/cities/city.service';
+import{HotelService} from './feature/hotels/hotel.service';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -15,6 +16,8 @@ import { CityItemComponent } from './feature/cities/city-item/city-item.componen
 import { CityListingComponent } from './feature/cities/city-listing/city-listing.component';
 import { DropdownComponent } from './feature/dropdown/dropdown.component';
 import { MakeTripComponent } from './feature/trip/make-trip/make-trip.component';
+import { HotelCardComponent } from './feature/hotels/hotel-card/hotel-card.component';
+import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/hotel-card-listing.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,14 @@ import { MakeTripComponent } from './feature/trip/make-trip/make-trip.component'
     CityItemComponent,
     CityListingComponent,
     DropdownComponent,
-    MakeTripComponent
+    MakeTripComponent,
+    HotelCardComponent,
+    HotelCardListingComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [CountryService,CityService],
+  providers: [CountryService,CityService,HotelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
