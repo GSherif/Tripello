@@ -18,6 +18,9 @@ import { DropdownComponent } from './feature/dropdown/dropdown.component';
 import { MakeTripComponent } from './feature/trip/make-trip/make-trip.component';
 import { HotelCardComponent } from './feature/hotels/hotel-card/hotel-card.component';
 import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/hotel-card-listing.component';
+import { RatingComponent } from './feature/rating/rating.component';
+import { RatingItemComponent } from './feature/rating/rating-item/rating-item.component';
+import { RatingListingComponent } from './feature/rating/rating-listing/rating-listing.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/h
     DropdownComponent,
     MakeTripComponent,
     HotelCardComponent,
-    HotelCardListingComponent
+    HotelCardListingComponent,
+    RatingComponent,
+    RatingItemComponent,
+    RatingListingComponent
   ],
   imports: [
     BrowserModule
