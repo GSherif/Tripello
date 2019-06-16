@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Country } from 'src/app/_models/country';
 
 @Component({
   selector: 'country-item',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryItemComponent implements OnInit {
 
+  @Input() country: Country;
   constructor() { }
 
   ngOnInit() {

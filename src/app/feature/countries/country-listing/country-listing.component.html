@@ -1,10 +1,11 @@
 <div class="container card-overlay">
   <!-- <div class="row justify-content-center"> -->
+  <!-- <country-item></country-item>
   <country-item></country-item>
   <country-item></country-item>
   <country-item></country-item>
   <country-item></country-item>
-  <country-item></country-item>
-  <country-item></country-item>
+  <country-item></country-item> -->
+  <country-item *ngFor="let newcountry of data" [country]='newcountry'></country-item>
   <!-- </div> -->
 </div>
