@@ -21,8 +21,21 @@ import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/h
 import { RatingComponent } from './feature/rating/rating.component';
 import { RatingItemComponent } from './feature/rating/rating-item/rating-item.component';
 import { RatingListingComponent } from './feature/rating/rating-listing/rating-listing.component';
-import { RouterModule } from '@angular/router';
+import { RestaurantComponent } from './feature/restaurant/restaurant.component';
+import { HotelsComponent } from './feature/hotels/hotels.component';
+
+import { HotelFacilitiesListingComponent } from './feature/hotels/hotel-facilities-listing/hotel-facilities-listing.component';
+import { HotelFacilitiesCardComponent } from './feature/hotels/hotel-facilities-card/hotel-facilities-card.component';
+import { HotelReasonsListComponent } from './feature/hotels/hotel-reasons-list/hotel-reasons-list.component';
+import { ReviewsListingComponent } from './feature/hotels/reviews-listing/reviews-listing.component';
+import { ReviewsItemComponent } from './feature/hotels/reviews-item/reviews-item.component';
+import { AddReviewComponent } from './feature/hotels/add-review/add-review.component';
+import { HotelSliderComponent } from './feature/hotels/hotel-slider/hotel-slider.component';
+import { ResturantService } from './feature/restaurant/resturant.service';
+import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/resturant-slider.component';
 import { HomeComponent } from './core/home/home.component';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -45,6 +58,16 @@ import { HomeComponent } from './core/home/home.component';
     RatingComponent,
     RatingItemComponent,
     RatingListingComponent,
+    RestaurantComponent,
+    HotelsComponent,
+    HotelFacilitiesListingComponent,
+    HotelFacilitiesCardComponent,
+    HotelReasonsListComponent,
+    ReviewsListingComponent,
+    ReviewsItemComponent,
+    AddReviewComponent,
+    HotelSliderComponent,
+    ResturantSliderComponent,
     HomeComponent
   ],
   imports: [
@@ -54,7 +77,7 @@ import { HomeComponent } from './core/home/home.component';
       { path: 'countries', component: CountriesComponent }
     ])
   ],
-  providers: [CountryService, CityService, HotelService],
+  providers: [CountryService,CityService,HotelService,ResturantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

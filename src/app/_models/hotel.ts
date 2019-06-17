@@ -13,5 +13,6 @@ export interface Hotel {
     rating: number;
     fkCityId: number;
     fkCountryId: number;
+    reasons:string[];
 
 }

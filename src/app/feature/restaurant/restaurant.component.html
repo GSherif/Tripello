@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+
+        <h2 class="card-overlay__header"> {{resturant.name}} </h2>
+
+    </div>
+    <div class="row">
+
+        <span class="span"> {{resturant.address}}</span> | <span class="span">{{resturant.resturantType}} </span>
+    </div>
+
+    <div class="row " style="margin-top:-1rem ;margin-bottom: 10px;">
+        <p class="card-overlay"> overall Rate
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </p>
+    </div>
+</div>
+
+<!--Restaurant Gallery-->
+<resturant-slider></resturant-slider>
+
+<br><br><br>
+<!-- client reviews -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="card-overlay__header">Clients Review</h2>
+        </div>
+    </div>
+    <!-- Client's Review -->
+    <reviews-listing [Reiviews]="resturant.reviews"></reviews-listing>
+</div>
+<br><br><br><br><br><br>
+
+<!-- your review -->
+<add-review></add-review>
