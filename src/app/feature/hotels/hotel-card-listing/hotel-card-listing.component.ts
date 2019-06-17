@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HotelSurrounding } from 'src/app/_models/hotel-surrounding';
 import { HotelService } from '../hotel.service';
+import { Hotel } from 'src/app/_models/hotel';
 
 @Component({
   selector: 'app-hotel-card-listing',
@@ -12,10 +13,7 @@ export class HotelCardListingComponent implements OnInit {
   constructor(private surroundings: HotelService) { }
 
   ngOnInit() {
-    if (!this.hotelsurrounds) {
-
-      this.hotelsurrounds = this.surroundings.getAll();
-    }
+  console.log(this.hotelsurrounds)
   }
 
 }
