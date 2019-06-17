@@ -12,6 +12,7 @@ export class CountryItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
