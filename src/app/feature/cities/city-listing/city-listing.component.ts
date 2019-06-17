@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { City } from 'src/app/_models/city';
+import { CityService } from '../city.service';
 
 @Component({
   selector: 'city-listing',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CityListingComponent implements OnInit {
 
-  constructor() { }
+  @Input() data: City[];
+  constructor(private cityService: CityService) { }
 
   ngOnInit() {
+    if (!this.data) {
+      this.data = this.cityService.getAll();
+    }
   }
 
 }
