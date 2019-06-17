@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{CountryService} from './feature/countries/country.service';
-import{CityService} from './feature/cities/city.service';
-import{HotelService} from './feature/hotels/hotel.service';
+import { CountryService } from './feature/countries/country.service';
+import { CityService } from './feature/cities/city.service';
+import { HotelService } from './feature/hotels/hotel.service';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -21,6 +21,9 @@ import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/h
 import { RatingComponent } from './feature/rating/rating.component';
 import { RatingItemComponent } from './feature/rating/rating-item/rating-item.component';
 import { RatingListingComponent } from './feature/rating/rating-listing/rating-listing.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './core/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -41,12 +44,17 @@ import { RatingListingComponent } from './feature/rating/rating-listing/rating-l
     HotelCardListingComponent,
     RatingComponent,
     RatingItemComponent,
-    RatingListingComponent
+    RatingListingComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'countries', component: CountriesComponent }
+    ])
   ],
-  providers: [CountryService,CityService,HotelService],
+  providers: [CountryService, CityService, HotelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
