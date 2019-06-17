@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Country } from 'src/app/_models/country';
+import { CountryService } from '../country.service';
 
 @Component({
   selector: 'country-listing',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryListingComponent implements OnInit {
 
-  constructor() { }
+  @Input() data: Country[];
+  constructor(private countryService: CountryService) { }
 
   ngOnInit() {
+    if (!this.data) {
+      this.data = this.countryService.getAll();
+    }
   }
 
 }

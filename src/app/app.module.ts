@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{CountryService} from './feature/countries/country.service';
-import{CityService} from './feature/cities/city.service';
-import{HotelService} from './feature/hotels/hotel.service';
+import { CountryService } from './feature/countries/country.service';
+import { CityService } from './feature/cities/city.service';
+import { HotelService } from './feature/hotels/hotel.service';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -33,6 +33,10 @@ import { AddReviewComponent } from './feature/hotels/add-review/add-review.compo
 import { HotelSliderComponent } from './feature/hotels/hotel-slider/hotel-slider.component';
 import { ResturantService } from './feature/restaurant/resturant.service';
 import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/resturant-slider.component';
+import { HomeComponent } from './core/home/home.component';
+import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -63,10 +67,15 @@ import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/
     ReviewsItemComponent,
     AddReviewComponent,
     HotelSliderComponent,
-    ResturantSliderComponent
+    ResturantSliderComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'countries', component: CountriesComponent }
+    ])
   ],
   providers: [CountryService,CityService,HotelService,ResturantService],
   bootstrap: [AppComponent]
