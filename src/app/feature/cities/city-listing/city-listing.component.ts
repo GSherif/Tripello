@@ -15,6 +15,7 @@ export class CityListingComponent implements OnInit {
   ngOnInit() {
     if (!this.data) {
       this.data = this.cityService.getAll();
+      console.log(this.data)
     }
   }
 
