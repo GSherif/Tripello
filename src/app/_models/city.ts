@@ -3,6 +3,7 @@ import { Hotel } from './hotel';
 export interface City {
     id: number;
     name: string;
+    image: string;
     description: string;
     rating: number;
     hotels: Hotel[];
