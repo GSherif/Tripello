@@ -1,0 +1,65 @@
+<div>
+    <div class="hotels__header">
+        <div style="text-align: center">
+            <h2 class="card-overlay__header">{{hotel.name}}</h2>
+            <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div>
+        <hotel-slider></hotel-slider>
+
+        <div class="Address ">
+            <p class="txt">{{hotel.description}}</p>
+        </div>
+    </div>
+
+    <!-- Facilities -->
+    <div class="facilitiesSection">
+        <div class="hotels__header">
+            <div style="text-align: center">
+                <h2 class="card-overlay__header" style="color: white;">Most Populer Facilities</h2>
+            </div>
+        </div>
+        <hotel-facilities-listing [hotelFacilities]="hotel.facilities"></hotel-facilities-listing>
+    </div>
+
+    <!-- Reasons -->
+    <div class="reasons-section">
+        <h5 class="fac-word" style="color: black">{{hotel.reasons.length}} Reason to choose Kempiniski</h5>
+        <hotel-reasons-list [hotelReasons]="hotel.reasons"></hotel-reasons-list>
+
+    </div>
+
+    <!-- Surroundings -->
+    <div>
+        <div class="hotels__header">
+            <div style="text-align: center">
+                <h2 class="card-overlay__header" style="color: black;">Hotel Surroundings</h2>
+            </div>
+        </div>
+        <app-hotel-card-listing [hotelsurrounds]="hotel['surroundings']"> </app-hotel-card-listing>
+    </div>
+
+    <!-- Guest's Reviews -->
+    <div>
+        <div class="hotels__header">
+            <div style="text-align: center">
+                <h2 class="card-overlay__header" style="color: black;">Our Guest's Reviews</h2>
+            </div>
+        </div>
+        <reviews-listing [Reiviews]="hotel.reviews"></reviews-listing>
+    </div>
+
+    <!-- Add review -->
+    <add-review></add-review>
+
+
+</div>
