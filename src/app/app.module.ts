@@ -35,6 +35,7 @@ import { ResturantService } from './feature/restaurant/resturant.service';
 import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/resturant-slider.component';
 import { HomeComponent } from './core/home/home.component';
 import { RouterModule } from '@angular/router';
+import { ContactUsComponent } from './shared/contact-us/contact-us.component';
 
 
 
@@ -68,16 +69,21 @@ import { RouterModule } from '@angular/router';
     AddReviewComponent,
     HotelSliderComponent,
     ResturantSliderComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'countries', component: CountriesComponent }
+      { path: 'countries', component: CountriesComponent },
+      { path: 'maketrip', component: MakeTripComponent },
+      { path: 'contactus', component: ContactUsComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent }
     ])
   ],
-  providers: [CountryService,CityService,HotelService,ResturantService],
+  providers: [CountryService, CityService, HotelService, ResturantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
