@@ -17,13 +17,12 @@ import { CityListingComponent } from './feature/cities/city-listing/city-listing
 import { DropdownComponent } from './feature/dropdown/dropdown.component';
 import { MakeTripComponent } from './feature/trip/make-trip/make-trip.component';
 import { HotelCardComponent } from './feature/hotels/hotel-card/hotel-card.component';
-import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/hotel-card-listing.component';
+import { HotelCardListingComponent } from './feature/hotels/hotel-surrounding-listing/hotel-card-listing.component';
 import { RatingComponent } from './feature/rating/rating.component';
 import { RatingItemComponent } from './feature/rating/rating-item/rating-item.component';
 import { RatingListingComponent } from './feature/rating/rating-listing/rating-listing.component';
 import { RestaurantComponent } from './feature/restaurant/restaurant.component';
 import { HotelsComponent } from './feature/hotels/hotels.component';
-
 import { HotelFacilitiesListingComponent } from './feature/hotels/hotel-facilities-listing/hotel-facilities-listing.component';
 import { HotelFacilitiesCardComponent } from './feature/hotels/hotel-facilities-card/hotel-facilities-card.component';
 import { HotelReasonsListComponent } from './feature/hotels/hotel-reasons-list/hotel-reasons-list.component';
@@ -35,8 +34,17 @@ import { ResturantService } from './feature/restaurant/resturant.service';
 import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/resturant-slider.component';
 import { HomeComponent } from './core/home/home.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TripService } from './feature/trip/make-trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
+import { CityDetailsListingComponent } from './feature/cities/city-details-listing/city-details-listing.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
+import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
+import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-details-card/hotel-details-card.component';
 import { ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -69,21 +77,31 @@ import { ReactiveFormsModule} from '@angular/forms';
     HotelSliderComponent,
     ResturantSliderComponent,
     HomeComponent,
-    ContactUsComponent
+
+    ContactUsComponent,
+
+    CityDetailsListingComponent,
+    HotelListingComponent,
+    HotelDetailsListingComponent,
+    HotelDetailsCardComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'countries', component: CountryListingComponent },
+      { path: 'countries', component: CountriesComponent },
       { path: 'maketrip', component: MakeTripComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent }
     ]),
+    BrowserAnimationsModule,
+    TabsModule.forRoot(),
+    CarouselModule.forRoot()
   ],
-  providers: [CountryService, CityService, HotelService, ResturantService],
+  providers: [CountryService, CityService, HotelService, ResturantService, TripService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

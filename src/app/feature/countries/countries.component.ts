@@ -10,13 +10,14 @@ import { Country } from 'src/app/_models/country';
   styleUrls: ['./countries.component.scss']
 })
 export class CountriesComponent implements OnInit {
-  @Input() data: City[]
+  // @Input() data: City[]
   @Input() country: Country
   constructor(private cityService: CityService, private countryService: CountryService) { }
 
-  ngOnInit() {
-    this.country = this.countryService.getById(1);
-    this.data = this.country.cities;
+  ngOnInit(){
+    this.country = this.countryService.getById(3);
+    console.log(this.country)
+    
   }
 
 }

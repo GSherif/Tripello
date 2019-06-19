@@ -10,12 +10,17 @@ import { CityService } from '../city.service';
 export class CityListingComponent implements OnInit {
 
   @Input() data: City[];
+  @Input() countryCities: City[];
   constructor(private cityService: CityService) { }
 
   ngOnInit() {
     if (!this.data) {
       this.data = this.cityService.getAll();
       console.log(this.data)
+    }
+
+    if (!this.countryCities) {
+      this.countryCities=this.cityService.getByCountryId(3);
     }
   }
 

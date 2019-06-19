@@ -1,4 +1,7 @@
-$primary-color:#1c1d29;
+$primary-color:#eeeeee;
+$secondry-color:#b55400;
+$third-color:#393e46;
+$forth-color:#222831;
 $white-color: white;
 $white-degree:#F4F6F8;
 $black-color:black;
@@ -18,17 +21,21 @@ $dark-purple:#870F4E;
 $primary-light-color:rgba(255, 255, 255, .1);
 $light-blue:rgb(66, 132, 252);
 $overlay-gradient:rgba(255, 255, 255, 0);
-$overlay-gradient-scnd:rgba(255, 255, 255, 1);  
-$trip-header-text:#F4EEF5; 
+$overlay-gradient-scnd:rgba(255, 255, 255, 1);
+$trip-header-text:#F4EEF5;
 $trip-tabs-icons-txt:#ECDBDB;
 $trip-primary:#565EB5;
-$primary-font:"Cookie", cursive;
-$secondry-font:"lato",sans-serif;
+$gray-100: #F7F7F7;
+$gray-200: rgb(228, 227, 227);
+$border-light: 1px solid rgba(0, 0, 0, 0.06);
+$primary-font:"Cookie",
+cursive;
+$secondry-font:"lato",
+sans-serif;
 $third-font:cursive;
-
- 
 $overlay-gradient-scnd:rgba(255, 255, 255, 1);
 $primary-font:"Cookie",
 cursive;
 $secondry-font:"lato",
 sans-serif;
+$basic-font:sans-serif;
