@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Country } from 'src/app/_models/country';
-import { CountryService } from '../../countries/country.service';
 import { City } from 'src/app/_models/city';
-import { CityService } from '../../cities/city.service';
+import { Trip } from 'src/app/_models/trip';
+import { TripService } from './trip.service';
 
 @Component({
   selector: 'app-make-trip',
@@ -10,13 +9,13 @@ import { CityService } from '../../cities/city.service';
   styleUrls: ['./make-trip.component.scss']
 })
 export class MakeTripComponent implements OnInit {
- countries:Country[];
- cities:City[];
-  constructor(private country: CountryService,private city:CityService) { }
+  trip: Trip[];
+  constructor(private tripe: TripService) { }
 
   ngOnInit() {
-    this.countries=this.country.getAll();
-    this.cities=this.city.getAll();
+    
+    this.trip = this.tripe.getAll();
+    console.log(this.trip)
   }
 
 }

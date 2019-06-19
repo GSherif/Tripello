@@ -2,7 +2,8 @@
 import { HotelSurrounding } from 'src/app/_models/hotel-surrounding';
 import { Hotel } from 'src/app/_models/hotel';
 import { Review } from 'src/app/_models/review';
-
+import { Injectable } from '@angular/core';
+@Injectable()
 export class HotelService{
     data:HotelSurrounding[];
     dataa:Hotel[];
@@ -20,7 +21,7 @@ export class HotelService{
         ]
         this.dataa=[
             {id:1,name:"Kempinski Nile Hotel",description:"First Settlement, Eastern Ring Road,New Cairo City,11477 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful",facilities:["Parking","Family rooms","Airport shuttle"],
-            advantages:null,reviews:[...this.reviews], images:null,rating:null,fkCityId:null,fkCountryId:null,
+            advantages:null,reviews:[...this.reviews], images:null,rating:null,fkCityId:1,fkCountryId:3,
             surroundings:[...this.data],reasons:["Prices you can't beat!","Manage your bookings online","The staff speak English","Booking is safe"]},
         ];
        
@@ -28,9 +29,13 @@ export class HotelService{
     getAll():Hotel[]{
         return this.dataa;
     }
-    getHotelById():Hotel
+    getHotelById(id:number):Hotel
     {
-        return this.dataa[0];
+        return this.dataa[id];
+    }
+    getHotelByCityId(cityid:number):Hotel[]
+    {
+        return this.dataa.filter(c => c.fkCityId === cityid);
     }
 
   

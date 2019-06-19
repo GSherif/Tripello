@@ -1,5 +1,6 @@
 import { Country } from '../../_models/country';
-
+import { Injectable } from '@angular/core';
+@Injectable()
 export class CountryService {
     data: Country[];
     constructor() {
@@ -33,5 +34,17 @@ export class CountryService {
     delete(id: number) {
         const i = this.data.findIndex(a => a.id === id);
         this.data.splice(i, 1);
+    }
+    getCountriesByIds(ids: number[]) :Country[]{
+        let coutries: Country[]=null;
+        for (let i = 0; i < ids.length; i++) {
+            console.log(this.getById(ids[i]))
+         let country= this.getById(ids[i]);
+            //  coutries.push(country);
+
+        }
+        return coutries;
+
+
     }
 }

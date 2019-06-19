@@ -1,10 +1,108 @@
-<app-dropdown>
+<div class="container-fluid">
+    <!--headers-->
+    <div class="row manage-trip manage-trip__headers-row">
+        <div class="col-2">
+            <h4 class="manage-trip__text-header">Days</h4>
+        </div>
+        <div class="col-8">
+            <h4 class="manage-trip__text-header">Manage Your Trip</h4>
+        </div>
+        <div class="col-2">
+            <h4 class="manage-trip__text-header">Order Your Day</h4>
 
-    <option *ngFor="let country of countries; let i=index" [value]="country.id">{{country.name}}</option>
+        </div>
+    </div>
+    <div class="row">
+        <!--days section-->
+        <div class="col-2 manage-trip manage-trip__days-section">
+            <button type="button" class="btn btn-info manage-trip__btn-day">Day 1</button>
+            <button type="button" class="btn btn-info  manage-trip__btn-day">Day 2</button>
+            <button type="button" class="btn btn-info  manage-trip__btn-day">Day 3</button>
 
-</app-dropdown>
+        </div>
+        <!--manage trip section-->
+        <div class="col-8 manage-trip manage-trip__details-section">
+
+            <!--dropdown-->
+            <div class="row manage-trip__dropdown">
+                <div class="col-1 manage-trip__dropdown-lable">
+                    <label class="manage-trip__dropdown-text">Country</label>
+                </div>
+                <div class="col-3">
+                    <div class="dropdown">
+                        <div class="manage-trip__tools">
+                            <select class="form-control" name="" id="">
+                                    <option value="1">Egypt</option>
+                                    <option value="2">Greece</option>
+                                    <option value="3">India</option>
+                                    <option value="4">Lebanon</option>
+                                </select>
+                            <a class="action-btn  " href="#">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1 manage-trip__dropdown-lable">
+                    <label class="manage-trip__dropdown-text">City</label>
+                </div>
+                <div class="col-3">
+                    <!-- <label for="staticEmail" class=" col-form-label">City</label> -->
+                    <div class="dropdown">
+                        <div class="manage-trip__tools">
+                            <select class="form-control" name="" id="">
+                                    <option value="1">Cairo</option>
+                                    <option value="3">Santoreny</option>
+                                    <option value="4">Baly</option>
+                                    <option value="2">Birute</option>
+                                </select>
+                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--tabs icons-->
+            <div class="row tabs ">
+                <!-- hena el tabs -->
+                <div>
+                    <tabset>
+                        <tab heading="Hotels" id="tab1">jjjjj</tab>
+                        <tab heading="Resturants"> Order </tab>
+                        <tab heading="Destinations">content 2</tab>
+                        <tab heading="Activities"> content</tab>
+                        <tab heading="Transportations">Basic 2</tab>
+
+                    </tabset>
+                </div>
+
+            </div>
 
 
-<app-dropdown>
-    <option *ngFor="let city of cities; let i=index" [value]="city.id">{{city.name}}</option>
-</app-dropdown>
+        </div>
+        <!--order section-->
+        <div class="col-2 manage-trip manage-trip__order-day-section ">
+
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">Hotel </button>
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">Activity
+                    1</button>
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">destination
+                    1</button>
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">destination2</button>
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">Activity
+                    2</button>
+            <button type="button " class="btn btn-info manage-trip__order-day manage-trip__btn-day ">destination
+                    3</button>
+        </div>
+        <!-- </div> -->
+
+    </div>
+</div>
+<button type="button" class="btn btn-secondary" style="margin: 0 auto;display: flex;">Preview Your Trip</button>

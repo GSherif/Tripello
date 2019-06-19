@@ -14,7 +14,7 @@ export class HotelsComponent implements OnInit {
   ngOnInit() {
     if (!this.hotel) {
 
-      this.hotel= this.hottel.getHotelById();
+      this.hotel= this.hottel.getHotelById(0);
       console.log(this.hotel)
     }
   }
