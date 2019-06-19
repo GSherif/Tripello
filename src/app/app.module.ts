@@ -17,7 +17,7 @@ import { CityListingComponent } from './feature/cities/city-listing/city-listing
 import { DropdownComponent } from './feature/dropdown/dropdown.component';
 import { MakeTripComponent } from './feature/trip/make-trip/make-trip.component';
 import { HotelCardComponent } from './feature/hotels/hotel-card/hotel-card.component';
-import { HotelCardListingComponent } from './feature/hotels/hotel-card-listing/hotel-card-listing.component';
+import { HotelCardListingComponent } from './feature/hotels/hotel-surrounding-listing/hotel-card-listing.component';
 import { RatingComponent } from './feature/rating/rating.component';
 import { RatingItemComponent } from './feature/rating/rating-item/rating-item.component';
 import { RatingListingComponent } from './feature/rating/rating-listing/rating-listing.component';
@@ -38,6 +38,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TripService } from './feature/trip/make-trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
+import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
+import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-details-card/hotel-details-card.component';
+
 
 @NgModule({
   declarations: [
@@ -70,8 +75,10 @@ import { ContactUsComponent } from './shared/contact-us/contact-us.component';
     HotelSliderComponent,
     ResturantSliderComponent,
     HomeComponent,
-
-    ContactUsComponent
+    ContactUsComponent,
+    HotelListingComponent,
+    HotelDetailsListingComponent,
+    HotelDetailsCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -85,7 +92,8 @@ import { ContactUsComponent } from './shared/contact-us/contact-us.component';
       { path: 'signup', component: SignupComponent }
     ]),
     BrowserAnimationsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [CountryService,CityService,HotelService,ResturantService,TripService],
 

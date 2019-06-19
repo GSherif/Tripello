@@ -9,7 +9,7 @@ export interface Hotel {
     surroundings: HotelSurrounding[];
     advantages: string[];
     reviews: Review[];
-    images: string[];
+    image: string;
     rating: number;
     fkCityId: number;
     fkCountryId: number;
