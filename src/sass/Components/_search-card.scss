@@ -1,0 +1,82 @@
+h1 {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+.search-card {
+    background-color: $third-color;
+    border: 1px;
+    border-color: $third-color;
+}
+
+.btn-primary {
+    color: $primary-color !important;
+    background-color: $secondry-color !important;
+    border-color: $secondry-color !important;
+}
+
+.Searchcard h4 {
+    position: relative;
+    top: 55% !important;
+    left: 5% !important;
+    color: #b55400 !important;
+    border: 1px;
+    border-color: $third-color;
+}
+
+.nav-link.active {
+    background-color: $secondry-color !important;
+}
+
+.form-group {
+    margin: 2rem;
+}
+
+.searchForm {
+    background-color: $third-color !important;
+    margin: 20px;
+    border-radius: 15px 50px 30px 5px;
+}
+
+.searchHeader {
+    padding-top: 20px;
+}
+
+.searchPart {
+    margin-top: 20px;
+}
+
+.basic-li {
+    height: 2px;
+    background-color: $third-color;
+}

@@ -38,6 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TripService } from './feature/trip/make-trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
+import { CityDetailsListingComponent } from './feature/cities/city-details-listing/city-details-listing.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,9 @@ import { ContactUsComponent } from './shared/contact-us/contact-us.component';
     ResturantSliderComponent,
     HomeComponent,
 
-    ContactUsComponent
+    ContactUsComponent,
+
+    CityDetailsListingComponent
   ],
   imports: [
     BrowserModule,
