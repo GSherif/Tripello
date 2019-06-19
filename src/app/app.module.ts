@@ -37,8 +37,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TripService } from './feature/trip/make-trip/trip.service';
-
-
+import { ContactUsComponent } from './shared/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -72,17 +71,24 @@ import { TripService } from './feature/trip/make-trip/trip.service';
     ResturantSliderComponent,
     HomeComponent,
 
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'countries', component: CountriesComponent }
+      { path: 'countries', component: CountriesComponent },
+      { path: 'countries', component: CountriesComponent },
+      { path: 'maketrip', component: MakeTripComponent },
+      { path: 'contactus', component: ContactUsComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent }
     ]),
     BrowserAnimationsModule,
     TabsModule.forRoot()
   ],
   providers: [CountryService,CityService,HotelService,ResturantService,TripService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
