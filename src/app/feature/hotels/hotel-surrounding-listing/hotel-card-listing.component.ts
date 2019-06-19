@@ -10,6 +10,7 @@ import { Hotel } from 'src/app/_models/hotel';
 })
 export class HotelCardListingComponent implements OnInit {
   @Input() hotelsurrounds: HotelSurrounding[];
+  
   constructor(private surroundings: HotelService) { }
 
   ngOnInit() {

@@ -17,22 +17,11 @@ export class TripService{
     hotels:Hotel[];
     cities:City[];
     constructor(private hotel:HotelService,private country:CountryService){
-    //   this.countries=[
-    //       {id:1,name:"Egypt",image:null,description:null,cities:null,rating:null},
-    //       {id:2,name:"Lebanon",image:null,description:null,cities:null,rating:null},
-    //       {id:3,name:"Greece",image:null,description:null,cities:null,rating:null},
-    //       {id:4,name:"Egypt",image:null,description:null,cities:null,rating:null},
-
-    //     ]
-        // this.cities=[
-        //     {id:1,name:"Cairo",image:null,description:null,rating:null,hotels:null,activities:null,restaurants:null,destinations:null,fkCountryId:1},
-        // ]
         this.countries=this.country.getCountriesByIds([1,3,5]);
         
         this.hotels= this.hotel.getHotelByCityId(1);
         console.log(this.countries);
 
-        // this.cities=
        this.data=[
            {id:1,cities:null,countries:[...this.countries],resturants:null,hotels:[...this.hotels]},
           

@@ -5,14 +5,14 @@ import { Review } from 'src/app/_models/review';
 import { Injectable } from '@angular/core';
 @Injectable()
 export class HotelService{
-    data:HotelSurrounding[];
+    surrounds:HotelSurrounding[];
     dataa:Hotel[];
     reviews:Review[];
     constructor(){
-        this.data=[
-            {id:1,name:"Chilis",categoryName:"Restaurant",distance:0.9,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:null},
-            {id:2,name:"Chilis",categoryName:"Restaurant",distance:0.7,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:null},
-            {id:3,name:"Chilis",categoryName:"Restaurant",distance:0.8,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:null},
+        this.surrounds=[
+            {id:1,name:"Chilis",categoryName:"Restaurant",distance:0.9,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:1},
+            {id:2,name:"Chilis",categoryName:"Restaurant",distance:0.7,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:1},
+            {id:3,name:"Chilis",categoryName:"Restaurant",distance:0.8,image:"https://pbs.twimg.com/profile_images/511754294341541888/vmY5Xn13_400x400.png",fkHotelId:1},
         ]
         this.reviews = [
             { id: 1, reviewerName: "Nathane Raynolda", comment: "Good location, close to the metro station.The bed was very comfortable and the room was nicely decorated.", rating: 5, reviewrtitle: "traveller,Blogger", image: "../../../assets/images/people-01-300x300.jpg" },
@@ -20,9 +20,18 @@ export class HotelService{
             { id: 3, reviewerName: "Monique", comment: "Very good location, small but quite compact there is everything needed. The bed is very comfy.", rating: 4, reviewrtitle: "Traveller", image: "https://lh6.googleusercontent.com/-OwTNCECrxC4/AAAAAAAAAAI/AAAAAAAAAkg/_FkeyRJ191M/photo.jpg64" },
         ]
         this.dataa=[
-            {id:1,name:"Kempinski Nile Hotel",description:"First Settlement, Eastern Ring Road,New Cairo City,11477 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful",facilities:["Parking","Family rooms","Airport shuttle"],
-            advantages:null,reviews:[...this.reviews], images:null,rating:null,fkCityId:1,fkCountryId:3,
-            surroundings:[...this.data],reasons:["Prices you can't beat!","Manage your bookings online","The staff speak English","Booking is safe"]},
+            {id:1,name:"Mariote Hotel",description:"First Settlement, Eastern Ring Road,New Cairo City,11477 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful",facilities:["Parking","Family rooms","Airport shuttle"],
+            advantages:null,reviews:[...this.reviews], image:"../../../assets/images/mariotte.jpg",rating:null,fkCityId:1,fkCountryId:3,
+            surroundings:[...this.surrounds],reasons:["Prices you can't beat!","Manage your bookings online","The staff speak English","Booking is safe"]},
+            
+            {id:2,name:"Four Season Hotel",description:"Second Settlement, Down Town,Giza City,7777 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful",facilities:["Parking","Family rooms","Airport shuttle"],
+            advantages:null,reviews:[...this.reviews], image:"../../../assets/images/four-season.jpg",rating:null,fkCityId:1,fkCountryId:3,
+            surroundings:[...this.surrounds],reasons:["Very Comfortable","Manage your bookings online","The staff So Freindly","is safe"]},
+
+            {id:3,name:"Ramses Hilton Hotel",description:"Second Settlement, Down Town,Giza City,7777 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful",facilities:["Parking","Family rooms","Airport shuttle"],
+            advantages:null,reviews:[...this.reviews], image:"../../../assets/images/hilton.jpg",rating:null,fkCityId:1,fkCountryId:3,
+            surroundings:[...this.surrounds],reasons:["Close to Down Tone","Very Cousy","The staff So Freindly","Booking is safe"]},
+       
         ];
 
     }
