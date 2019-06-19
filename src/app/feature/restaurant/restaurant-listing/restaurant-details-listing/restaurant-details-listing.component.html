@@ -1,0 +1,7 @@
+<div class="container justify-content-center">
+    <div class="row">
+        <restaurant-details-card class="col-lg-4" *ngFor="let resturant of restuarants" [resturant]="resturant"> </restaurant-details-card>
+    </div>
+    <pagination [totalItems]="30" style="display: flex;justify-content: flex-end;margin-top: 1rem;"></pagination>
+
+</div>
