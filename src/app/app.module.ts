@@ -36,8 +36,7 @@ import { ResturantSliderComponent } from './feature/restaurant/resturant-slider/
 import { HomeComponent } from './core/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
-
-
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -74,14 +73,15 @@ import { ContactUsComponent } from './shared/contact-us/contact-us.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'countries', component: CountriesComponent },
+      { path: 'countries', component: CountryListingComponent },
       { path: 'maketrip', component: MakeTripComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent }
-    ])
+    ]),
   ],
   providers: [CountryService, CityService, HotelService, ResturantService],
   bootstrap: [AppComponent]

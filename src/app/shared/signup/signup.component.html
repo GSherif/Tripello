@@ -21,39 +21,39 @@
     </div>
   </div>
   <div class="col-md-4 no-gutters nopadding">
-    <form class="login100-form validate-form">
+    <form [formGroup]="signupForm" class="login100-form validate-form">
       <span class="login100-form-title p-b-43">
         Sign Up
       </span>
       <div class="wrap-input100Signup validate-input">
         <input class="input100" type="text" name="FirstName">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">First Name</span>
+        <span class="label-input100SignUp" formControlName="firstName">First Name</span>
       </div>
       <div class="wrap-input100Signup validate-input">
         <input class="input100" type="text" name="LastName">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">Last Name</span>
+        <span class="label-input100SignUp" formControlName="lastName">Last Name</span>
       </div>
       <div class="wrap-input100Signup validate-input">
         <input class="input100" type="text" name="PhoneNumber">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">Phone Number</span>
+        <span class="label-input100SignUp" formControlName="phoneNumber">Phone Number</span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Valid email is required: ex@abc.xyz">
         <input class="input100" type="text" name="email">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">Email</span>
+        <span class="label-input100SignUp" formControlName="email">Email</span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Password is required">
         <input class="input100" type="password" name="pass">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">Password</span>
+        <span class="label-input100SignUp" formControlName="password">Password</span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Password is required">
         <input class="input100" type="password" name="pass2">
         <span class="focus-input100"></span>
-        <span class="label-input100SignUp">Confirm Password</span>
+        <span class="label-input100SignUp" formControlName="confirmPassword">Confirm Password</span>
       </div>
       <div class="container-login100-form-btn">
         <button class="login100-form-btn">
