@@ -25,7 +25,6 @@ export class TripService{
        this.data=[
            {id:1,cities:null,countries:[...this.countries],resturants:null,hotels:[...this.hotels]},
           
-           
        ];
      
        

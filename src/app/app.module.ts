@@ -46,6 +46,7 @@ import { RestaurantListingComponent } from './feature/restaurant/restaurant-list
 import { RestaurantDetailsListingComponent } from './feature/restaurant/restaurant-listing/restaurant-details-listing/restaurant-details-listing.component';
 import { RestaurantDetailsCardComponent } from './feature/restaurant/restaurant-listing/restaurant-details-card/restaurant-details-card.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ListAllCountriesComponent } from './feature/countries/list-all-countries/list-all-countries.component';
 
 
 @NgModule({
@@ -86,6 +87,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     RestaurantListingComponent,
     RestaurantDetailsListingComponent,
     RestaurantDetailsCardComponent,
+    ListAllCountriesComponent,
   ],
   imports: [
     BrowserModule,
