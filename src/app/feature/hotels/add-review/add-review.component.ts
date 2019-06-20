@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'add-review',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddReviewComponent implements OnInit {
 
+  addReviewForm: FormGroup;
+  
   constructor() { }
 
   ngOnInit() {

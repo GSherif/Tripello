@@ -43,7 +43,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
 import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
 import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-details-card/hotel-details-card.component';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserService } from './_services/user.service';
 
 
 @NgModule({
@@ -90,7 +91,7 @@ import { ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'countries', component: CountriesComponent },
+      { path: 'countries', component: CountryListingComponent },
       { path: 'maketrip', component: MakeTripComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
@@ -100,7 +101,7 @@ import { ReactiveFormsModule} from '@angular/forms';
     TabsModule.forRoot(),
     CarouselModule.forRoot()
   ],
-  providers: [CountryService, CityService, HotelService, ResturantService, TripService],
+  providers: [CountryService, CityService, HotelService, ResturantService, TripService, UserService],
 
   bootstrap: [AppComponent]
 })
