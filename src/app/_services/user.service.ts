@@ -19,6 +19,18 @@ export class UserService {
         return this.data.find(u => u.id === id)
     }
 
+    getByEmailAndPassword(email: String, password: String): Boolean {
+        let exist: Boolean;
+        let user = this.data.find(u => u.email === email && u.password == password);
+        if (user !== null) {
+            exist = true;
+        }
+        else {
+            exist = false;
+        }
+        return exist;
+    }
+
     add(user: User) {
         console.log(this.data.length);
         // user.id = this.data.length + 1;

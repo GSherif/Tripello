@@ -21,19 +21,33 @@
     </div>
   </div>
   <div class="col-lg-4 no-gutters nopadding">
-    <form class="login100-form validate-form" style="color: black;" [formGroup]="loginForm">
+    <form class="login100-form validate-form" style="color: black;" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <span class="login100-form-title p-b-43">
         Login to continue
       </span>
       <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-        <input class="input100" type="text" name="email">
+        <input class="input100" type="text" name="email" formControlName="email">
         <span class="focus-input100"></span>
         <span class="label-input100">Email</span>
       </div>
+      <div>
+        <span *ngIf="!loginForm.get('email').valid">
+          <span *ngIf="loginForm.get('email').errors && loginForm.get('email').touched"
+            class="error__msg text-danger">Please
+            Enter a valid Email!</span>
+        </span>
+      </div>
       <div class="wrap-input100 validate-input" data-validate="Password is required">
-        <input class="input100" type="password" name="pass">
+        <input class="input100" type="password" name="pass" formControlName="password">
         <span class="focus-input100"></span>
         <span class="label-input100">Password</span>
+      </div>
+      <div>
+        <span *ngIf="!loginForm.get('password').valid">
+          <span *ngIf="loginForm.get('password').errors && loginForm.get('password').touched"
+            class="error__msg text-danger">Password should be not less than 8 characters and have capital and small
+            letters!</span>
+        </span>
       </div>
       <input type="checkbox" name="rememberMe" value="remember" checked>Remember Me<br>
       <div class="container-login100-form-btn">

@@ -40,7 +40,7 @@ export class SignupComponent implements OnInit {
       }
       console.log(this.user);
       this.userService.add(this.user);
-      this.router.navigate(['/countries']);
+      this.router.navigate(['/maketrip']);
     }
   }
 }
