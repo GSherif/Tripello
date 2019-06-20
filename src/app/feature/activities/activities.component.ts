@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'activities',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesComponent implements OnInit {
 
-  constructor() { }
+  activityForm: FormGroup;
+  
+  constructor() {
+
+  }
 
   ngOnInit() {
+
   }
 
 }

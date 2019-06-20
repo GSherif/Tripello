@@ -4,7 +4,7 @@
             <h2 class="card-overlay__header" style="color: white;">Add Your Review</h2>
         </div>
     </div>
-    <form class="review-from" action="/action_page.php">
+    <form class="review-from" action="/action_page.php" [formGroup]="addReviewForm">
         <div class="form-group">
             <label for="Review">Review</label>
             <textarea class="form-control" id="Review"></textarea>

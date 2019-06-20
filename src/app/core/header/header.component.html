@@ -23,10 +23,10 @@
         <a class="nav-link" [routerLink]="['/contactus']">Contact Us</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <a class="fas fa-sign-in-alt text-dark mr-3" [routerLink]="['/login']"></a>
+    <a class="fas fa-user-plus text-dark" [routerLink]="['/signup']"></a>
+    <!-- <form class="form-inline my-2 my-lg-0" [formGroup]="search">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <a class="fas fa-sign-in-alt text-dark mr-3" [routerLink]="['/login']"></a>
-      <a class="fas fa-user-plus text-dark" [routerLink]="['/signup']"></a>
-    </form>
+    </form> -->
   </div>
 </nav>

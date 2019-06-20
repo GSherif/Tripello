@@ -1,59 +1,59 @@
 <div class="row">
     <div class="col col-md-3 searchPart">
-        <form class="searchForm">
+        <form class="searchForm" [formGroup]="cityDetails">
             <h1 class="form-group searchHeader">Search</h1>
             <div class="form-group">
                 <select class="form-control" id="conditionsselect1">
-          <option>Country</option>
-          <option>Country1</option>
-          <option>Country2</option>
-        </select>
+                    <option>Country</option>
+                    <option>Country1</option>
+                    <option>Country2</option>
+                </select>
             </div>
             <div class="form-group">
                 <select class="form-control" id="conditionsselect2">
-          <option>City</option>
-          <option>City1</option>
-          <option>City2</option>
-          <option>City3</option>
-          <option>City4</option>
-          <option>City5</option>
-        </select>
+                    <option>City</option>
+                    <option>City1</option>
+                    <option>City2</option>
+                    <option>City3</option>
+                    <option>City4</option>
+                    <option>City5</option>
+                </select>
             </div>
             <div class="form-group">
                 <select class="form-control" id="make1">
-          <option>resturant</option>
-          <option>resturant1</option>
-          <option>resturant2</option>
-          <option>resturant3</option>
-          <option>resturant4</option>
-          <option>resturant5</option>
-        </select>
+                    <option>resturant</option>
+                    <option>resturant1</option>
+                    <option>resturant2</option>
+                    <option>resturant3</option>
+                    <option>resturant4</option>
+                    <option>resturant5</option>
+                </select>
             </div>
             <div class="form-group">
                 <select class="form-control" id="make1">
-          <option>Test</option>
-          <option>Test1</option>
-          <option>Test2</option>
-          <option>Test3</option>
-          <option>Test4</option>
-          <option>Test5</option>
-        </select>
+                    <option>Test</option>
+                    <option>Test1</option>
+                    <option>Test2</option>
+                    <option>Test3</option>
+                    <option>Test4</option>
+                    <option>Test5</option>
+                </select>
             </div>
             <div class="form-group">
                 <select class="form-control" id="year1">
-          <option>Year</option>
-          <option>2000</option>
-          <option>2001</option>
-          <option>2002</option>
-          <option>2003</option>
-          <option>2004</option>
-          <option>2005</option>
-          <option>2006</option>
-          <option>2007</option>
-          <option>2008</option>
-          <option>2009</option>
-          <option>2010</option>
-        </select>
+                    <option>Year</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                </select>
             </div>
             <hr>
             <button type="btn" class="btn btn-primary form-group">Find Now</button>
@@ -70,24 +70,26 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="nav nav-justified nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link bg-light" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link bg-light" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link bg-light" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link bg-light" href="#">Active</a>
-                        </li>
-
-                    </ul>
+                    <div>
+                        <tabset>
+                            <tab heading="Safari">
+                                <restaurant-listing></restaurant-listing>
+                            </tab>
+                            <tab heading="Cycling">
+                                <restaurant-listing></restaurant-listing>
+                            </tab>
+                            <tab heading="Canoeing">
+                                <restaurant-listing></restaurant-listing>
+                            </tab>
+                            <tab heading="Kayaking">
+                                ggggg
+                            </tab>
+                            <tab heading="Dogsledding">
+                                ggg
+                            </tab>
+                            <tab heading="Rock">Rock</tab>
+                        </tabset>
+                    </div>
                 </div>
             </div>
 

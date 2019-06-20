@@ -20,38 +20,58 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-4 no-gutters nopadding">
-    <form class="login100-form validate-form">
+  <div class="col-md-4 no-gutters nopadding">
+    <form [formGroup]="signupForm" class="login100-form validate-form" (ngSubmit)="onSubmit()">
       <span class="login100-form-title p-b-43">
         Sign Up
       </span>
       <div class="wrap-input100Signup validate-input">
-        <input class="input100" type="text" name="FirstName">
+        <input class="input100" type="text" name="FirstName" formControlName="firstName">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">First Name</span>
+        <span *ngIf="!signupForm.get('firstName').valid">
+          <span *ngIf="signupForm.get('firstName').errors && signupForm.get('firstName').touched"
+            class="error__msg text-danger">Please Enter a valid name!</span>
+        </span>
       </div>
       <div class="wrap-input100Signup validate-input">
-        <input class="input100" type="text" name="LastName">
+        <input class="input100" type="text" name="LastName" formControlName="lastName">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">Last Name</span>
+        <span *ngIf="!signupForm.get('lastName').valid">
+          <span *ngIf="signupForm.get('lastName').errors && signupForm.get('lastName').touched"
+            class="error__msg text-danger">Please Enter a valid name!</span>
+        </span>
       </div>
       <div class="wrap-input100Signup validate-input">
-        <input class="input100" type="text" name="PhoneNumber">
+        <input class="input100" type="text" name="PhoneNumber" formControlName="phoneNumber">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">Phone Number</span>
+        <span *ngIf="!signupForm.get('phoneNumber').valid">
+          <span *ngIf="signupForm.get('phoneNumber').errors && signupForm.get('phoneNumber').touched"
+            class="error__msg text-danger">Phone number should contain numbers only!</span>
+        </span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Valid email is required: ex@abc.xyz">
-        <input class="input100" type="text" name="email">
+        <input class="input100" type="text" name="email" formControlName="email">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">Email</span>
+        <span *ngIf="!signupForm.get('email').valid">
+          <span *ngIf="signupForm.get('email').errors && signupForm.get('email').touched"
+            class="error__msg text-danger">Please Enter a valid Email!</span>
+        </span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Password is required">
-        <input class="input100" type="password" name="pass">
+        <input class="input100" type="password" name="pass" formControlName="password">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">Password</span>
+        <span *ngIf="!signupForm.get('password').valid">
+          <span *ngIf="signupForm.get('password').errors && signupForm.get('password').touched"
+            class="error__msg text-danger">Password should be not less than 8 characters and have capital and small letters!</span>
+        </span>
       </div>
       <div class="wrap-input100Signup validate-input" data-validate="Password is required">
-        <input class="input100" type="password" name="pass2">
+        <input class="input100" type="password" name="pass2" formControlName="confirmPassword">
         <span class="focus-input100"></span>
         <span class="label-input100SignUp">Confirm Password</span>
       </div>
