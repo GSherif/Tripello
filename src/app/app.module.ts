@@ -47,7 +47,8 @@ import { RestaurantListingComponent } from './feature/restaurant/restaurant-list
 import { RestaurantDetailsListingComponent } from './feature/restaurant/restaurant-listing/restaurant-details-listing/restaurant-details-listing.component';
 import { RestaurantDetailsCardComponent } from './feature/restaurant/restaurant-listing/restaurant-details-card/restaurant-details-card.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
-import { ListAllCountriesComponent } from './feature/countries/list-all-countries/list-all-countries.component';
+import { ActivitiesComponent } from './feature/activities/activities.component';
+
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { ListAllCountriesComponent } from './feature/countries/list-all-countrie
     RestaurantListingComponent,
     RestaurantDetailsListingComponent,
     RestaurantDetailsCardComponent,
-    ListAllCountriesComponent,
+    ActivitiesComponent,
+
   ],
   imports: [
     BrowserModule,

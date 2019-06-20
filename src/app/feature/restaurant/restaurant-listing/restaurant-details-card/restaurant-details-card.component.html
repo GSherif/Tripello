@@ -1,4 +1,4 @@
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
     <img [src]="resturant.image" class="card-img-top" alt="...">
     <div class="card-body">
         <p class="card-text">{{resturant.name}}</p>
@@ -8,3 +8,35 @@
         <a href="#" class="card-link">Resturant Detials</a>
     </div>
 </div>
+ -->
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="Searchcard">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img [src]="resturant.image" style="width: 100% ; height:100%">
+                    </div>
+                    <div class="col-md-6  card-body">
+                        <div class="list-title">
+                            <ul class="list-inline list-unstyled">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <h4>{{resturant.name}}</h4>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="list-location">
+                            <a href="#"><i class="fa fa-map-marker"></i><small>{{resturant.address}}</small> </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="basic-line"></div>
