@@ -50,6 +50,8 @@ import { RestaurantDetailsListingComponent } from './feature/restaurant/restaura
 import { RestaurantDetailsCardComponent } from './feature/restaurant/restaurant-listing/restaurant-details-card/restaurant-details-card.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ActivitiesComponent } from './feature/activities/activities.component';
+import { TripCardListingComponent } from './feature/trip/trip-card-listing/trip-card-listing.component';
+import { TripCardComponent } from './feature/trip/trip-card/trip-card.component';
 
 
 
@@ -95,6 +97,8 @@ import { ActivitiesComponent } from './feature/activities/activities.component';
     RestaurantDetailsListingComponent,
     RestaurantDetailsCardComponent,
     ActivitiesComponent,
+    TripCardListingComponent,
+    TripCardComponent,
 
   ],
   imports: [
