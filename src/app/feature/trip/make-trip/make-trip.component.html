@@ -29,20 +29,14 @@
                     <label class="manage-trip__dropdown-text">Country</label>
                 </div>
                 <div class="col-3">
-                    <div class="dropdown">
-                        <div class="manage-trip__tools">
-                            <select class="form-control" name="" id="">
-                                    <option value="1">Egypt</option>
-                                    <option value="2">Greece</option>
-                                    <option value="3">India</option>
-                                    <option value="4">Lebanon</option>
-                                </select>
-                            <a class="action-btn  " href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
-                            </a>
-                        </div>
 
-                    </div>
+                    <app-dropdown>
+                        <option *ngFor="let country of trip['countries']" value='country.id'>{{country.name}}</option>
+                        <a class="action-btn  " href="#">
+                            <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                        </a>
+                    </app-dropdown>
+
 
                 </div>
 
@@ -50,21 +44,14 @@
                     <label class="manage-trip__dropdown-text">City</label>
                 </div>
                 <div class="col-3">
-                    <!-- <label for="staticEmail" class=" col-form-label">City</label> -->
-                    <div class="dropdown">
-                        <div class="manage-trip__tools">
-                            <select class="form-control" name="" id="">
-                                    <option value="1">Cairo</option>
-                                    <option value="3">Santoreny</option>
-                                    <option value="4">Baly</option>
-                                    <option value="2">Birute</option>
-                                </select>
-                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
-                            </a>
-                        </div>
 
-                    </div>
+                    <app-dropdown>
+                        <option *ngFor="let city of trip['cities']" value='city.id'>{{city.name}}</option>
+
+                        <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                            <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                        </a>
+                    </app-dropdown>
 
                 </div>
             </div>
@@ -74,8 +61,18 @@
                 <!-- hena el tabs -->
                 <div>
                     <tabset>
-                        <tab heading="Hotels" id="tab1">jjjjj</tab>
-                        <tab heading="Resturants"> Order </tab>
+                        <tab heading="Hotels" id="tab1">
+                            <div class="row">
+                                <div>
+                                    <trip-card-listing [dataa]="trip['hotels']"></trip-card-listing>
+                                </div>
+                            </div>
+                        </tab>
+                        <tab heading="Resturants">
+                            <div class="row">
+                                <trip-card-listing [dataa]="trip['resturants']"></trip-card-listing>
+                            </div>
+                        </tab>
                         <!-- <tab heading="Destinations">content 2</tab> -->
                         <tab heading="Activities"> content</tab>
                         <!-- <tab heading="Transportations">Basic 2</tab> -->

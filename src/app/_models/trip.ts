@@ -2,6 +2,7 @@ import { City } from './city';
 import { Country } from './country';
 import { Resturant } from './resturant';
 import { Hotel } from './hotel';
+import { Activity } from './activity';
 
 export interface Trip {
     id: number;
@@ -11,5 +12,6 @@ export interface Trip {
     countries: Country[];
     resturants:Resturant[];
     hotels:Hotel[];
+    activities:Activity[]
     
 }
