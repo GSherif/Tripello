@@ -43,6 +43,12 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
 import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
 import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-details-card/hotel-details-card.component';
+import { RestaurantListingComponent } from './feature/restaurant/restaurant-listing/restaurant-listing.component';
+import { RestaurantDetailsListingComponent } from './feature/restaurant/restaurant-listing/restaurant-details-listing/restaurant-details-listing.component';
+import { RestaurantDetailsCardComponent } from './feature/restaurant/restaurant-listing/restaurant-details-card/restaurant-details-card.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ActivitiesComponent } from './feature/activities/activities.component';
+
 
 
 @NgModule({
@@ -83,6 +89,11 @@ import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-
     HotelListingComponent,
     HotelDetailsListingComponent,
     HotelDetailsCardComponent,
+    RestaurantListingComponent,
+    RestaurantDetailsListingComponent,
+    RestaurantDetailsCardComponent,
+    ActivitiesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -97,7 +108,8 @@ import { HotelDetailsCardComponent } from './feature/hotels/hotel-listing/hotel-
     ]),
     BrowserAnimationsModule,
     TabsModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   providers: [CountryService, CityService, HotelService, ResturantService, TripService],
 

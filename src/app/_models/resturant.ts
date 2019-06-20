@@ -6,7 +6,7 @@ export interface Resturant {
     address: string;
     resturantType:string;
     reviews: Review[];
-    images: string[];
+    image: string;
     rating: number;
     fkCityId: number;
     fkCountryId: number;

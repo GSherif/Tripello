@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { City } from 'src/app/_models/city';
 import { Trip } from 'src/app/_models/trip';
 import { TripService } from './trip.service';
 
