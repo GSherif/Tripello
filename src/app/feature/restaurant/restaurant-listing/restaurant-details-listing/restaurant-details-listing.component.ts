@@ -9,7 +9,7 @@ import { ResturantService } from '../../resturant.service';
 })
 export class RestaurantDetailsListingComponent implements OnInit {
 @Input() restuarants:Resturant[];
-  constructor(private resturant:ResturantService) { }
+  constructor() { }
 
   ngOnInit() {
    
