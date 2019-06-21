@@ -1,51 +1,40 @@
 <div class="row">
-  <div class="col col-md-3 searchPart">
-    <form class="searchForm" [formGroup]="activityForm">
-      <h1 class="form-group searchHeader">Search</h1>
-      <div class="ScrollPart">
-        <label for="customRange3">Price range</label>
-        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
-        <label for="customRange3">Duration</label>
-        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
-      </div>
-      <button type="btn" class="btn btn-primary form-group">Find Now</button>
-      <div class="pb-3"></div>
-    </form>
-  </div>
-  <div class="col col-md-9">
-    <div class="col-md-9">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> Reno: 42 properties found </h2>
-          <p> 3 Reasons to Visit: gambling, entertainment & relaxation </p>
+    <div class="col col-md-3 searchPart">
+        <form-filter></form-filter>
+    </div>
+    <div class="col col-md-9">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2> Reno: 42 properties found </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <tabset>
+                            <tab heading="Safari">
+                                <city-activity-details-card-listing [cityDataArr]="safari"></city-activity-details-card-listing>
+                            </tab>
+                            <tab heading="Cycling">
+                                <city-activity-details-card-listing [cityDataArr]="cycling"></city-activity-details-card-listing>
+
+                            </tab>
+                            <tab heading="Canoeing">
+                                <city-activity-details-card-listing [cityDataArr]="canoeing"></city-activity-details-card-listing>
+
+                            </tab>
+
+                            <tab heading="Dog sledding">
+                                <city-activity-details-card-listing [cityDataArr]="dogsledding"></city-activity-details-card-listing>
+                            </tab>
+
+                        </tabset>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div>
-            <tabset>
-              <tab heading="Safari">
-                <restaurant-listing></restaurant-listing>
-              </tab>
-              <tab heading="Cycling">
-                <restaurant-listing></restaurant-listing>
-              </tab>
-              <tab heading="Canoeing">
-                <restaurant-listing></restaurant-listing>
-              </tab>
-              <tab heading="Kayaking">
-                ggggg
-              </tab>
-              <tab heading="Dogsledding">
-                ggg
-              </tab>
-              <tab heading="Rock">Rock</tab>
-            </tabset>
-          </div>
-        </div>
-      </div>
 
     </div>
-
-  </div>
 </div>

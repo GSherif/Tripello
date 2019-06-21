@@ -2,7 +2,7 @@ import { City } from 'src/app/_models/city';
 import { Injectable } from '@angular/core';
 @Injectable()
 export class CityService {
-  
+
     data: City[];
     constructor() {
         this.data = [
@@ -38,9 +38,23 @@ export class CityService {
         const i = this.data.findIndex(c => c.id === id);
         this.data.splice(i, 1);
     }
-    getByCountryId(id: number) :City[] {
-        console.log(this.data.filter(a=>a.fkCountryId===id))
-        return this.data.filter(a=>a.fkCountryId===id);
+    getByCountryId(id: number): City[] {
+        // console.log(this.data.filter(a=>a.fkCountryId===id))
+        return this.data.filter(a => a.fkCountryId === id);
+    }
+    getByCountryIds(ids: number[]): City[] {
+        var cities: City[] = [];
+
+        for (let i = 0; i < ids.length; i++) {
+
+            
+            this.getByCountryId(ids[i])
+
+             cities.push(... this.getByCountryId(ids[i]));
+        }
+        return cities;
+
+
     }
 
 

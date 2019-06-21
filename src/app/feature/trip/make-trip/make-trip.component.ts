@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Trip } from 'src/app/_models/trip';
 import { TripService } from './trip.service';
 
@@ -8,13 +8,19 @@ import { TripService } from './trip.service';
   styleUrls: ['./make-trip.component.scss']
 })
 export class MakeTripComponent implements OnInit {
-  trip: Trip[];
+
+  @Input() trip: Trip;
+
   constructor(private tripe: TripService) { }
 
   ngOnInit() {
-    
-    this.trip = this.tripe.getAll();
-    console.log(this.trip)
+    if (!this.trip) {
+      this.trip = this.tripe.getById(1);
+      console.log(this.trip);
+
+      console.log(this.trip['countries']);
+
+    }
   }
 
 }

@@ -1,99 +1,40 @@
 <div class="row">
     <div class="col col-md-3 searchPart">
-        <form class="searchForm" [formGroup]="cityDetails">
-            <h1 class="form-group searchHeader">Search</h1>
-            <div class="form-group">
-                <select class="form-control" id="conditionsselect1">
-                    <option>Country</option>
-                    <option>Country1</option>
-                    <option>Country2</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="conditionsselect2">
-                    <option>City</option>
-                    <option>City1</option>
-                    <option>City2</option>
-                    <option>City3</option>
-                    <option>City4</option>
-                    <option>City5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="make1">
-                    <option>resturant</option>
-                    <option>resturant1</option>
-                    <option>resturant2</option>
-                    <option>resturant3</option>
-                    <option>resturant4</option>
-                    <option>resturant5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="make1">
-                    <option>Test</option>
-                    <option>Test1</option>
-                    <option>Test2</option>
-                    <option>Test3</option>
-                    <option>Test4</option>
-                    <option>Test5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="year1">
-                    <option>Year</option>
-                    <option>2000</option>
-                    <option>2001</option>
-                    <option>2002</option>
-                    <option>2003</option>
-                    <option>2004</option>
-                    <option>2005</option>
-                    <option>2006</option>
-                    <option>2007</option>
-                    <option>2008</option>
-                    <option>2009</option>
-                    <option>2010</option>
-                </select>
-            </div>
-            <hr>
-            <button type="btn" class="btn btn-primary form-group">Find Now</button>
-            <div class="pb-3"></div>
-        </form>
+
+        <form-city-filter></form-city-filter>
+
     </div>
     <div class="col col-md-9">
         <div class="col-md-9">
             <div class="row">
                 <div class="col-md-12">
                     <h2> Reno: 42 properties found </h2>
-                    <p> 3 Reasons to Visit: gambling, entertainment & relaxation </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div>
                         <tabset>
-                            <tab heading="Safari">
-                                <restaurant-listing></restaurant-listing>
+                            <tab heading="Hotels">
+
+                                <city-activity-details-card-listing [cityDataArr]="hotel"></city-activity-details-card-listing>
                             </tab>
-                            <tab heading="Cycling">
-                                <restaurant-listing></restaurant-listing>
+                            <tab heading="Resturants">
+
+                                <city-activity-details-card-listing [cityDataArr]="resturant"></city-activity-details-card-listing>
+
                             </tab>
-                            <tab heading="Canoeing">
-                                <restaurant-listing></restaurant-listing>
+                            <tab heading="Activities">
+
+                                <city-activity-details-card-listing [cityDataArr]="activity"></city-activity-details-card-listing>
+
                             </tab>
-                            <tab heading="Kayaking">
-                                ggggg
-                            </tab>
-                            <tab heading="Dogsledding">
-                                ggg
-                            </tab>
-                            <tab heading="Rock">Rock</tab>
+
                         </tabset>
                     </div>
                 </div>
             </div>
 
-            <restaurant-listing></restaurant-listing>
         </div>
 
     </div>

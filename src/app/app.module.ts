@@ -50,6 +50,15 @@ import { RestaurantDetailsListingComponent } from './feature/restaurant/restaura
 import { RestaurantDetailsCardComponent } from './feature/restaurant/restaurant-listing/restaurant-details-card/restaurant-details-card.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ActivitiesComponent } from './feature/activities/activities.component';
+import { TripCardListingComponent } from './feature/trip/trip-card-listing/trip-card-listing.component';
+import { TripCardComponent } from './feature/trip/trip-card/trip-card.component';
+import { FormFilterComponent } from './feature/activities/form-filter/form-filter.component';
+import { FormCityFilterComponent } from './feature/cities/form-city-filter/form-city-filter.component';
+import {CityActivityDetailsCardListingComponent} from './feature/details-listing/city-activity-details-card-listing/city-activity-details-card-listing.component'
+import { CityActivityDetailsCardComponent } from './feature/details-listing/city-activity-details-card/city-activity-details-card.component';
+import { from } from 'rxjs';
+import { ActivityService } from './feature/activities/activity.service';
+
 
 
 
@@ -95,6 +104,12 @@ import { ActivitiesComponent } from './feature/activities/activities.component';
     RestaurantDetailsListingComponent,
     RestaurantDetailsCardComponent,
     ActivitiesComponent,
+    TripCardListingComponent,
+    TripCardComponent,
+    FormFilterComponent,
+    FormCityFilterComponent,
+    CityActivityDetailsCardComponent,
+    CityActivityDetailsCardListingComponent
 
   ],
   imports: [
@@ -113,7 +128,7 @@ import { ActivitiesComponent } from './feature/activities/activities.component';
     CarouselModule.forRoot(),
     PaginationModule.forRoot()
   ],
-  providers: [CountryService, CityService, HotelService, ResturantService, TripService, UserService],
+  providers: [CountryService, CityService, HotelService, ResturantService, ActivityService,TripService, UserService],
 
   bootstrap: [AppComponent]
 })
