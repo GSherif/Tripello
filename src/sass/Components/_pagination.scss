@@ -1,8 +1,20 @@
-.paging{
+.paging {
     display: flex;
     justify-content: center !important;
     margin-top: 0.7rem;
-    &__page-link{
-        color: $trip-primary !important;
+
+    &__page-link {
+        color: $secondry-color !important;
     }
-}  
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: $primary-color !important;
+    background-color: $secondry-color !important;
+    border-color: $secondry-color !important;
+}
+
+.page-link {
+    color: $secondry-color !important;
+}

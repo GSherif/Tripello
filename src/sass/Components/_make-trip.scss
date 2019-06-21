@@ -1,27 +1,32 @@
 .manage-trip {
     text-align: center;
     color: $secondry-color !important;
+
     &__headers-row {
-        border-bottom: 0.001rem solid #b8b7b8;
+        border-bottom: 0.001rem solid $primary-color;
         margin-bottom: 1.9rem;
     }
+
     // &__days-section {
     //     border-right: 0.001rem solid #b8b7b8;
     // }
     &__btn-day {
         display: block !important;
-        color: #fff !important;
+        color: $primary-color !important;
         background-color: $secondry-color !important;
         border-color: $secondry-color !important;
         margin-top: 0.5rem;
         margin-left: 4.6rem;
     }
+
     &__details-section {
         text-align: center
     }
+
     &__dropdown {
         justify-content: center;
     }
+
     &__dropdown-text {
         margin-top: 0.4rem;
         font-family: $secondry-font;
@@ -29,34 +34,41 @@
         margin-left: 0.4rem;
         margin-bottom: 1.4rem;
     }
+
     &__btn-dropdwon {
         outline: none;
         background: $white-color !important;
         // width: 11rem;
         color: $secondry-color;
     }
+
     &--text {
         color: $secondry-color;
         font-family: $basic-font;
     }
+
     &--icons {
         color: $secondry-color;
     }
+
     &__text-header {
         color: $secondry-color;
         font-family: $primary-font;
         font-size: 2rem;
         font-weight: 600;
     }
+
     // &__order-day-section {
     //     border-left: 0.001rem solid #b8b7b8;
     // }
     &__order-day {
         margin-left: 0rem;
     }
+
     &__tools {
         display: flex;
     }
+
     &--plus-icon {
         margin-top: 0.7rem;
         margin-left: 0.7rem;

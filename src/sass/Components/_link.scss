@@ -1,13 +1,15 @@
-.link{
+.link {
     // font-size: 1.6rem;
-    color: #ffffff;
+    color: $primary-color;
     transition: 0.3s;
     opacity: 0.7;
-    &:hover{
-        color: red;
+
+    &:hover {
+        color: $secondry-color;
     }
-    &--moved{
-        &:hover{
+
+    &--moved {
+        &:hover {
             margin-left: 5px;
         }
     }
