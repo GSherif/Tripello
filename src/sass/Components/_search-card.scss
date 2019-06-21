@@ -77,6 +77,11 @@ a.text-dark {
     color: $primary-color !important;
 }
 
+.text-sec {
+    color: $secondry-color !important;
+    font-family: $primary-font;
+}
+
 .form-group {
     margin: 2rem;
 }
