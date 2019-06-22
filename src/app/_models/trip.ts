@@ -12,6 +12,7 @@ export interface Trip {
     countries: Country[];
     resturants:Resturant[];
     hotels:Hotel[];
-    activities:Activity[]
+    activities:Activity[];
+    
     
 }

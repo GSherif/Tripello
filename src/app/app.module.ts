@@ -38,7 +38,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TripService } from './feature/trip/make-trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
-import { CityDetailsListingComponent } from './feature/cities/city-details-listing/city-details-listing.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
 import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
@@ -93,10 +92,7 @@ import { ActivityService } from './feature/activities/activity.service';
     HotelSliderComponent,
     ResturantSliderComponent,
     HomeComponent,
-
     ContactUsComponent,
-
-    CityDetailsListingComponent,
     HotelListingComponent,
     HotelDetailsListingComponent,
     HotelDetailsCardComponent,
