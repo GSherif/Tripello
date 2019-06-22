@@ -1,0 +1,14 @@
+.btn-outline-primary {
+    color: $primary-color !important;
+    border-color: $primary-color !important;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $primary-color !important;
+        color: $third-color !important;
+    }
+}
+
+.card-zoom__body .text h3 {
+    color: $primary-color !important;
+}
