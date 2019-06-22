@@ -49,6 +49,7 @@ img {
     background-color: $primary-color;
 }
 
+
 .icon-text {
     display: none;
 }
@@ -67,16 +68,16 @@ img {
         color: $secondry-color;
         transform: scale(1.1);
 
-        &:after {
-            .icon-text {
-                display: block;
-                position: absolute;
-                left: 55px;
-                background-color: $primary-color;
+        +.icon-text {
+            transition: all .2s ease-in-out;
+            display: block;
+            position: absolute;
+            left: 57px;
+            top: -2px;
+            background-color: $third-color;
 
-                p {
-                    color: $secondry-color;
-                }
+            p {
+                color: $secondry-color;
             }
         }
     }
