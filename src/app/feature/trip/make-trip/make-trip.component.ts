@@ -15,7 +15,7 @@ export class MakeTripComponent implements OnInit {
 
   ngOnInit() {
     if (!this.trip) {
-      this.trip = this.tripe.getById(1);
+      this.trip = this.tripe.getAll();
       console.log(this.trip);
 
       console.log(this.trip['countries']);
