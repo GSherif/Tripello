@@ -5,7 +5,7 @@ export interface Hotel {
     id: number;
     name: string;
     description: string;
-    address:string;
+    address: string;
     facilities: string[];
     surroundings: HotelSurrounding[];
     advantages: string[];
@@ -14,6 +14,6 @@ export interface Hotel {
     rating: number;
     fkCityId: number;
     fkCountryId: number;
-    reasons:string[];
-
+    reasons: string[];
+    tag: string;
 }

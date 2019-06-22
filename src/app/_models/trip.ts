@@ -13,6 +13,6 @@ export interface Trip {
     resturants:Resturant[];
     hotels:Hotel[];
     activities:Activity[];
-    
+    type:string;
     
 }
