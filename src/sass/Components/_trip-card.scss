@@ -9,7 +9,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 50px;
-
     &::before {
         content: "";
         background-color: $light-grey;
@@ -21,29 +20,31 @@
         bottom: 0;
         z-index: -1;
     }
-
     &__time {
         float: left;
     }
-
     &__details {
         img {
             float: left;
             margin-right: 10px;
         }
-
         .rating {
             i.fas {
                 color: $secondry-color;
             }
         }
-
         .tag {
-            color: $light-grey;
+            color: $grey-color;
+            margin-left: 31px;
+            font-weight: 700;
+            color: #ea7424;
         }
-
         .details-text {
             color: $dark-grey;
         }
     }
+}
+
+.span-prview {
+    color: $secondry-color;
 }

@@ -5,10 +5,10 @@ import { Trip } from 'src/app/_models/trip';
 import { Country } from 'src/app/_models/country';
 import { City } from 'src/app/_models/city';
 import { Injectable } from '@angular/core';
-import { HotelService } from '../../hotels/hotel.service';
-import { CountryService } from '../../countries/country.service';
-import { ResturantService } from '../../restaurant/resturant.service';
-import { CityService } from '../../cities/city.service';
+import { HotelService } from '../hotels/hotel.service';
+import { CountryService } from '../countries/country.service';
+import { ResturantService } from '../restaurant/resturant.service';
+import { CityService } from '../cities/city.service';
 import { Activity } from 'src/app/_models/activity';
 
 @Injectable()

@@ -36,7 +36,7 @@ import { HomeComponent } from './core/home/home.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { TripService } from './feature/trip/make-trip/trip.service';
+import { TripService } from './feature/trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
@@ -59,6 +59,8 @@ import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
 import { AboutComponent } from './core/about/about.component';
 import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
+import { PreviewCardComponent } from './feature/trip/preview-card/preview-card.component';
+import { PreviewCardListingComponent } from './feature/trip/preview-card-listing/preview-card-listing.component';
 
 
 
@@ -109,7 +111,9 @@ import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.c
     CityActivityDetailsCardComponent,
     CityActivityDetailsCardListingComponent,
     AboutComponent,
-    PreviewTripComponent
+    PreviewTripComponent,
+    PreviewCardComponent,
+    PreviewCardListingComponent
 
   ],
   imports: [
