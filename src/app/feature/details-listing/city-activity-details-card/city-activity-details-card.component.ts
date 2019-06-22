@@ -20,8 +20,26 @@ export class CityActivityDetailsCardComponent implements OnInit {
     // this.cityData;
     this.trip = this.tripp.getAll();
     console.log(this.trip)
-    
-    this.trip.hotels.push(this.cityData);
+    let tag = this.cityData.tag;
+    console.log(tag)
+    let triptage = this.trip.type = tag;
+    console.log(this.trip.type)
+
+    if (triptage == 'hotel') {
+      console.log(this.trip.hotels);
+      this.trip.hotels.push(this.cityData);
+      console.log(this.trip)
+
+    }
+    else if (triptage == 'resturant') {
+      this.trip.resturants.push(this.cityData);
+
+    }
+    else if(triptage==='activity')
+    {
+      this.trip.activities.push(this.cityData);
+    }
+
   }
 
 

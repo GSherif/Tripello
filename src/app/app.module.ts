@@ -57,6 +57,7 @@ import { CityActivityDetailsCardListingComponent } from './feature/details-listi
 import { CityActivityDetailsCardComponent } from './feature/details-listing/city-activity-details-card/city-activity-details-card.component';
 import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
+import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
 
 
 
@@ -105,7 +106,8 @@ import { ActivityService } from './feature/activities/activity.service';
     FormFilterComponent,
     FormCityFilterComponent,
     CityActivityDetailsCardComponent,
-    CityActivityDetailsCardListingComponent
+    CityActivityDetailsCardListingComponent,
+    PreviewTripComponent
 
   ],
   imports: [

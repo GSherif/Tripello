@@ -2,9 +2,10 @@ export interface Activity {
     id: number;
     name: string;
     image: string;
-    address:string;
+    address: string;
     description: string;
-    activityType:String;
+    activityType: String;
     rating: number;
     fkCityId: number;
+    tag: string;
 }

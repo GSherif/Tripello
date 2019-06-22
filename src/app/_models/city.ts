@@ -11,4 +11,5 @@ export interface City {
     restaurants: string[];
     destinations: string[];
     fkCountryId: number;
+    tag: string;
 }
