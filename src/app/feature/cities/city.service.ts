@@ -14,7 +14,7 @@ export class CityService {
             { id: 6, name: "Athens", image: "../../assets/images/city-athens.jpg", description: "Athens is the capital of Greece. It was also at the heart of Ancient Greece, a powerful civilization and empire. The city is still dominated by 5th-century BC landmarks, including the Acropolis, a hilltop citadel topped with ancient buildings like the colonnaded Parthenon temple. The Acropolis Museum, along with the National Archaeological Museum, preserves sculptures, vases, jewelry and more from Ancient Greece.", rating: null, hotels: null, activities: null, restaurants: null, destinations: null, fkCountryId: 2 },
             { id: 7, name: "Luxor", image: "../../assets/images/luxur-city.jpg", description: "Luxor, Egypt’s sprawling capital, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of antiquities including royal mummies and gilded King Tutankhamun artifacts. Nearby, Giza is the site of the iconic pyramids and Great Sphinx, dating to the 26th century BC. In Gezira Island’s leafy Zamalek district, 187m Cairo Tower affords panoramic city views.", rating: null, hotels: null, activities: null, restaurants: null, destinations: null, fkCountryId: 3 }
         ]
-    }
+    } 
 
     getAll(): City[] {
         return this.data;
