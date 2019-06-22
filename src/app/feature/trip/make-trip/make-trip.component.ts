@@ -10,16 +10,19 @@ import { TripService } from './trip.service';
 export class MakeTripComponent implements OnInit {
 
   @Input() trip: Trip;
-
+  @Input() orderTrip:any [];
   constructor(private tripe: TripService) { }
 
   ngOnInit() {
-    if (!this.trip) {
-      this.trip = this.tripe.getById(1);
+    if (!this.trip &&!this.orderTrip) {
+
+      this.trip = this.tripe.getAll();
       console.log(this.trip);
 
       console.log(this.trip['countries']);
 
+      this.orderTrip = this.tripe.getAllOrdered();
+      console.log(this.orderTrip);
     }
   }
 

@@ -38,7 +38,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TripService } from './feature/trip/make-trip/trip.service';
 import { ContactUsComponent } from './shared/contact-us/contact-us.component';
-import { CityDetailsListingComponent } from './feature/cities/city-details-listing/city-details-listing.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HotelListingComponent } from './feature/hotels/hotel-listing/hotel-listing.component';
 import { HotelDetailsListingComponent } from './feature/hotels/hotel-listing/hotel-details-listing/hotel-details-listing.component';
@@ -54,10 +53,11 @@ import { TripCardListingComponent } from './feature/trip/trip-card-listing/trip-
 import { TripCardComponent } from './feature/trip/trip-card/trip-card.component';
 import { FormFilterComponent } from './feature/activities/form-filter/form-filter.component';
 import { FormCityFilterComponent } from './feature/cities/form-city-filter/form-city-filter.component';
-import {CityActivityDetailsCardListingComponent} from './feature/details-listing/city-activity-details-card-listing/city-activity-details-card-listing.component'
+import { CityActivityDetailsCardListingComponent } from './feature/details-listing/city-activity-details-card-listing/city-activity-details-card-listing.component'
 import { CityActivityDetailsCardComponent } from './feature/details-listing/city-activity-details-card/city-activity-details-card.component';
 import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
+import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
 
 
 
@@ -93,10 +93,7 @@ import { ActivityService } from './feature/activities/activity.service';
     HotelSliderComponent,
     ResturantSliderComponent,
     HomeComponent,
-
     ContactUsComponent,
-
-    CityDetailsListingComponent,
     HotelListingComponent,
     HotelDetailsListingComponent,
     HotelDetailsCardComponent,
@@ -109,7 +106,8 @@ import { ActivityService } from './feature/activities/activity.service';
     FormFilterComponent,
     FormCityFilterComponent,
     CityActivityDetailsCardComponent,
-    CityActivityDetailsCardListingComponent
+    CityActivityDetailsCardListingComponent,
+    PreviewTripComponent
 
   ],
   imports: [
@@ -118,6 +116,8 @@ import { ActivityService } from './feature/activities/activity.service';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'countries', component: CountryListingComponent },
+      { path: 'countries/:id', component: CountriesComponent },
+      { path: 'cities/:id', component: CitiesComponent },
       { path: 'maketrip', component: MakeTripComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
@@ -128,7 +128,7 @@ import { ActivityService } from './feature/activities/activity.service';
     CarouselModule.forRoot(),
     PaginationModule.forRoot()
   ],
-  providers: [CountryService, CityService, HotelService, ResturantService, ActivityService,TripService, UserService],
+  providers: [CountryService, CityService, HotelService, ResturantService, ActivityService, TripService, UserService],
 
   bootstrap: [AppComponent]
 })

@@ -1,12 +1,12 @@
 <div class="card-zoom ">
-  <div class="card-zoom__body">
-    <a href="#">
-      <img [src]='city.image' alt="" srcset="">
-      <div class="text">
-        <h3 class="card-zoom__text-header">{{city.name}}</h3>
-        <!-- <span>20 Lisiting</span> -->
-      </div>
-      <a href="#" class="btn btn-outline-primary round btn-lg font-weight-3">Browse</a>
-    </a>
-  </div>
+    <div class="card-zoom__body">
+        <!-- <a href="#"> -->
+            <img [src]='city.image' alt="" srcset="">
+            <div class="text">
+                <h3 class="card-zoom__text-header">{{city.name}}</h3>
+                <!-- <span>20 Lisiting</span> -->
+            </div>
+            <a [routerLink]="['cities', city.id]" class="btn btn-outline-primary round btn-lg font-weight-3">Browse</a>
+        <!-- </a> -->
+    </div>
 </div>

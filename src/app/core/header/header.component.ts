@@ -8,7 +8,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
 
-  // search: FormGroup;
+  search: FormGroup;
 
   constructor() { }
 

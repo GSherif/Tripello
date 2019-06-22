@@ -7,4 +7,5 @@ export interface Country {
     description: string;
     cities: City[];
     rating: number;
+    tag:string;
 }

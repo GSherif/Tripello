@@ -1,8 +1,8 @@
 <div class="col-lg-4 col-md-5 card-overlay__image-col mb-4">
     <div class="card-overlay__overlay-container">
-        <a href="#">
+        <a [routerLink]="['/countries',country.id]">
             <div class="card-overlay__centered">{{country.name}}</div>
-            <img class="card-overlay__image-card" [src]="country.image">
+            <img class="card-overlay__image-card" [src]="country.image" style="width:100%;height: 100%">
 
             <div class="card-overlay__overlay">
                 <h5 class="card-overlay__overlay-text-header">{{country.name}}</h5>

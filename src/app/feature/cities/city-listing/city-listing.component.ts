@@ -19,9 +19,9 @@ export class CityListingComponent implements OnInit {
       console.log(this.data)
     }
 
-    if (!this.countryCities) {
-      this.countryCities=this.cityService.getByCountryId(3);
-    }
+    // if (!this.countryCities) {
+    //   this.countryCities=this.cityService.getByCountryId(3);
+    // }
   }
 
 }

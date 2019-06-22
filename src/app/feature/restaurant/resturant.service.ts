@@ -17,13 +17,13 @@ export class ResturantService{
         ]
         this.data=[
             {id:1,name:"Bistroo",address:"Address : 2125 Spring Street",resturantType:"Restaurant Type : Cafe",
-           reviews:[...this.reviews], image:"../../../assets/images/bistroo.jpg",rating:4,fkCityId:1,fkCountryId:3},
-           
+           reviews:[...this.reviews], image:"../../../assets/images/bistroo.jpg",rating:4,fkCityId:1,fkCountryId:3, tag:'resturant'},
+
            {id:2,name:"Chilis",address:"Address : 177 Mostafa elNhas Street",resturantType:"Restaurant Type : Restaurant",
-           reviews:[...this.reviews], image:"../../../assets/images/chilis.jpg",rating:3,fkCityId:1,fkCountryId:3},
+           reviews:[...this.reviews], image:"../../../assets/images/chilis.jpg",rating:3,fkCityId:1,fkCountryId:3,tag:'resturant'},
+
            {id:3,name:"Chicken Fill-A",address:"Address : 2125 Omar Afndy Street",resturantType:"Restaurant Type : Fast Food",
-           reviews:[...this.reviews], image:"../../../assets/images/chicken-filla.jpg",rating:3,fkCityId:1,fkCountryId:3},
-          
+           reviews:[...this.reviews], image:"../../../assets/images/chicken-filla.jpg",rating:3,fkCityId:1,fkCountryId:3,tag:'resturant'},
         ];
        
     }

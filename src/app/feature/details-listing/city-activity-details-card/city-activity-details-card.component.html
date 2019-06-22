@@ -1,6 +1,12 @@
 <div class="row mb-3">
     <div class="col-md-12">
         <div class="Searchcard">
+            <div class="Searchcard-btn">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="icon-text">
+                <p>Add To My Trip</p>
+            </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-3">
@@ -20,6 +26,7 @@
                         <div class="list-location">
                             <a href="#"><i class="fa fa-map-marker"></i><small>{{cityData.address}}</small> </a>
                         </div>
+                        <button href="#" class="btn btn--primary" (click)="OnAdd()">Add To Trip</button>
 
                     </div>
 
