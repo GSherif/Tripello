@@ -52,14 +52,16 @@ img {
 
 .icon-text {
     display: none;
+    transform: scale(-1);
+
 }
 
-.Searchcard-btn {
+.AddToTrip-btn {
     position: absolute;
     background-color: $secondry-color;
     height: 40px;
     width: 40px;
-    z-index: 1;
+    z-index: 10;
     color: $third-color;
     transition: all .2s ease-in-out;
 
@@ -67,13 +69,17 @@ img {
         background-color: $third-color;
         color: $secondry-color;
         transform: scale(1.1);
+        transition: all .2s ease-in-out;
 
         +.icon-text {
             transition: all .2s ease-in-out;
+            transform: scale(1);
             display: block;
             position: absolute;
             left: 57px;
             top: -2px;
+            z-index: 10;
+            height: 25px;
             background-color: $third-color;
 
             p {
