@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { City } from 'src/app/_models/city';
+import { Trip } from 'src/app/_models/trip';
+import { TripService } from '../../trip/make-trip/trip.service';
 
 @Component({
   selector: 'city-item',
@@ -9,9 +11,21 @@ import { City } from 'src/app/_models/city';
 export class CityItemComponent implements OnInit {
 
   @Input() city: City;
-  constructor() { }
+  trip: Trip;
+  constructor(private tripp: TripService) { }
 
   ngOnInit() {
+  }
+  OnAdd() {
+    // this.cityData;
+    this.trip = this.tripp.getAll();
+    console.log(this.trip)
+    let tag = this.city.tag;
+    console.log(tag)
+    let triptage = this.trip.type = tag;
+    console.log(this.trip.type)
+    this.trip.cities.push(this.city);
+
   }
 
 }

@@ -35,8 +35,8 @@
                     </app-dropdown>
 
                 </div>
-                <a class="action-btn  " href="#">
-                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="right: auto;bottom: auto;"></i>
                 </a>
 
                 <div class="col-1 manage-trip__dropdown-lable">
@@ -48,10 +48,9 @@
                         <option *ngFor="let city of trip['cities']" value='city.id'>{{city.name}}</option>
 
                     </app-dropdown>
-
                 </div>
                 <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"></i>
+                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="right: auto;bottom: auto;"></i>
                 </a>
             </div>
 
@@ -61,32 +60,26 @@
                 <div>
                     <tabset>
                         <tab heading="Hotels" id="tab1">
-                            <div class="row">
-                                <div>
-                                    <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                        <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem;"></i>
-                                    </a>
-                                    <trip-card-listing [dataa]="trip['hotels']"></trip-card-listing>
-                                </div>
-                            </div>
+                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
+                            </a>
+                            <trip-card-listing [dataa]="trip['hotels']"></trip-card-listing>
+
                         </tab>
                         <tab heading="Resturants">
-                            <div class="row">
-                                <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem;"></i>
-                                </a>
-                                <trip-card-listing [dataa]="trip['resturants']"></trip-card-listing>
-                            </div>
+                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
+                            </a>
+                            <trip-card-listing [dataa]="trip['resturants']"></trip-card-listing>
+
                         </tab>
-                        <!-- <tab heading="Destinations">content 2</tab> -->
+
                         <tab heading="Activities">
                             <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem;"></i>
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
                             </a>
                             <trip-card-listing [dataa]="trip['activities']"></trip-card-listing>
                         </tab>
-                        <!-- <tab heading="Transportations">Basic 2</tab> -->
-
                     </tabset>
                 </div>
 
@@ -103,4 +96,4 @@
 
     </div>
 </div>
-<button type="button" class="btn btn-info manage-trip__order-day manage-trip__btn-day" style="margin: 0 auto;display: flex;margin-bottom: 9rem;">Preview Your Trip</button>
+<button type="button" class="btn btn-info manage-trip__order-day manage-trip__btn-day" style="margin: 0 auto;display: flex;margin-bottom: 14rem;">Preview Your Trip</button>
