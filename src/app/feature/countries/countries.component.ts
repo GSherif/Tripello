@@ -14,10 +14,10 @@ export class CountriesComponent implements OnInit {
   @Input() country: Country
   constructor(private cityService: CityService, private countryService: CountryService) { }
 
-  ngOnInit(){
-    this.country = this.countryService.getById(3);
+  ngOnInit() {
+    this.countryService.getById(this.country.id);
     console.log(this.country)
-    
+
   }
 
 }
