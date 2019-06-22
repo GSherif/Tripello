@@ -57,6 +57,7 @@ import { CityActivityDetailsCardListingComponent } from './feature/details-listi
 import { CityActivityDetailsCardComponent } from './feature/details-listing/city-activity-details-card/city-activity-details-card.component';
 import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
+import { AboutComponent } from './core/about/about.component';
 
 
 
@@ -105,7 +106,8 @@ import { ActivityService } from './feature/activities/activity.service';
     FormFilterComponent,
     FormCityFilterComponent,
     CityActivityDetailsCardComponent,
-    CityActivityDetailsCardListingComponent
+    CityActivityDetailsCardListingComponent,
+    AboutComponent
 
   ],
   imports: [
@@ -116,7 +118,9 @@ import { ActivityService } from './feature/activities/activity.service';
       { path: 'countries', component: CountryListingComponent },
       { path: 'countries/:id', component: CountriesComponent },
       { path: 'cities/:id', component: CitiesComponent },
+      { path: 'countries/:id/cities/:id', component: CitiesComponent },
       { path: 'maketrip', component: MakeTripComponent },
+      { path: 'about', component: AboutComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent }
