@@ -10,6 +10,6 @@ export interface Resturant {
     rating: number;
     fkCityId: number;
     fkCountryId: number;
-
+    tag:string;
 
 }

@@ -23,19 +23,19 @@ export class HotelService {
             {
                 id: 1, name: "Mariote Hotel",address:"New Cairo City,11477 Cairo,Egypt" ,description: "First Settlement, Eastern Ring Road,New Cairo City,11477 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful", facilities: ["Parking", "Family rooms", "Airport shuttle"],
                 advantages: null, reviews: [...this.reviews], image: "../../../assets/images/mariotte.jpg", rating: null, fkCityId: 1, fkCountryId: 3,
-                surroundings: [...this.surrounds], reasons: ["Prices you can't beat!", "Manage your bookings online", "The staff speak English", "Booking is safe"]
+                surroundings: [...this.surrounds], reasons: ["Prices you can't beat!", "Manage your bookings online", "The staff speak English", "Booking is safe"],tag:'hotel'
             },
 
             {
                 id: 2, name: "Four Season Hotel", address:" Down Town,Giza City,7777 Cairo,Egypt",description: "Second Settlement, Down Town,Giza City,7777 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful", facilities: ["Parking", "Family rooms", "Airport shuttle"],
                 advantages: null, reviews: [...this.reviews], image: "../../../assets/images/four-season.jpg", rating: null, fkCityId: 1, fkCountryId: 3,
-                surroundings: [...this.surrounds], reasons: ["Very Comfortable", "Manage your bookings online", "The staff So Freindly", "is safe"]
+                surroundings: [...this.surrounds], reasons: ["Very Comfortable", "Manage your bookings online", "The staff So Freindly", "is safe"],tag:'hotel'
             },
 
             {
                 id: 3, name: "Ramses Hilton Hotel", address:"Second Settlement, Down Town,Giza City,7777 Cairo,Egypt",description: "Second Settlement, Down Town,Giza City,7777 Cairo,Egypt.... hotels Every thing was perfect! Excellent hotel we really enjoy it, great view above the nile, stuff very friendly and helpful", facilities: ["Parking", "Family rooms", "Airport shuttle"],
                 advantages: null, reviews: [...this.reviews], image: "../../../assets/images/hilton.jpg", rating: null, fkCityId: 1, fkCountryId: 3,
-                surroundings: [...this.surrounds], reasons: ["Close to Down Tone", "Very Cousy", "The staff So Freindly", "Booking is safe"]
+                surroundings: [...this.surrounds], reasons: ["Close to Down Tone", "Very Cousy", "The staff So Freindly", "Booking is safe"],tag:'hotel'
             },
 
         ];
