@@ -57,6 +57,7 @@ import { CityActivityDetailsCardListingComponent } from './feature/details-listi
 import { CityActivityDetailsCardComponent } from './feature/details-listing/city-activity-details-card/city-activity-details-card.component';
 import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
+import { AboutComponent } from './core/about/about.component';
 import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
 
 
@@ -107,6 +108,7 @@ import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.c
     FormCityFilterComponent,
     CityActivityDetailsCardComponent,
     CityActivityDetailsCardListingComponent,
+    AboutComponent,
     PreviewTripComponent
 
   ],
@@ -118,7 +120,9 @@ import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.c
       { path: 'countries', component: CountryListingComponent },
       { path: 'countries/:id', component: CountriesComponent },
       { path: 'cities/:id', component: CitiesComponent },
+      { path: 'countries/:id/cities/:id', component: CitiesComponent },
       { path: 'maketrip', component: MakeTripComponent },
+      { path: 'about', component: AboutComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent }

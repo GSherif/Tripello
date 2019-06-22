@@ -5,6 +5,9 @@ import { Hotel } from 'src/app/_models/hotel';
 import { ResturantService } from '../restaurant/resturant.service';
 import { HotelService } from '../hotels/hotel.service';
 import { ActivityService } from '../activities/activity.service';
+import { CityService } from './city.service';
+import { City } from 'src/app/_models/city';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cities',
@@ -15,11 +18,12 @@ export class CitiesComponent implements OnInit {
   @Input() hotel: Hotel[];
   @Input() resturant: Resturant[];
   @Input() activity: Activity[];
-
-  constructor(private resturants: ResturantService, private hotels: HotelService, private activities: ActivityService) { }
+  @Input() city: City;
+  constructor(private resturants: ResturantService, private hotels: HotelService, private activities: ActivityService, private cityService: CityService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-
+    const id: number = +this.activatedRoute.snapshot.params.id;
+    this.city = this.cityService.getById(id);
     if (!this.resturant && !this.hotel && !this.activity) {
       this.resturant = this.resturants.getResturantsByCitId(1);
       this.hotel = this.hotels.getHotelByCityId(1);
