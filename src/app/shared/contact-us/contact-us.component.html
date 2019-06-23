@@ -1,14 +1,51 @@
-<div class="container my-3">
-  <form [formGroup]="contactUs">
-    <label for="fname" class="text-dark">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname" class="text-dark">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject" class="text-dark">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="button" class="btn btn-primary" value="Submit">
-  </form>
+<div class="row">
+  <div class="col-sm-12 col-lg-12 mt-3">
+    <h4 class="text-orange text-center">Feel free to contact us</h4>
+  </div>
+</div>
+<div class="container mx-auto">
+  <div class="row mx-auto">
+    <div class="well well-sm bg-orange mx-auto mt-3 mb-5">
+      <form [formGroup]="contactUs">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name" class="text-orange">
+                Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="text-orange">
+                Email Address</label>
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                </span>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="text-orange">
+                Subject</label>
+              <select id="subject" name="subject" class="form-control" required="required">
+                <option value="na" selected="">Choose One:</option>
+                <option value="service">General Customer Service</option>
+                <option value="suggestions">Suggestions</option>
+                <option value="product">Product Support</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name" class="text-orange">
+                Message</label>
+              <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-dark mx-auto" id="btnContactUs">
+            Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
