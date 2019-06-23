@@ -61,6 +61,8 @@ import { AboutComponent } from './core/about/about.component';
 import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
 import { PreviewCardComponent } from './feature/trip/preview-card/preview-card.component';
 import { PreviewCardListingComponent } from './feature/trip/preview-card-listing/preview-card-listing.component';
+import { ActivityDetailsComponent } from './feature/activities/activity-details/activity-details.component';
+
 
 
 
@@ -114,6 +116,7 @@ import { PreviewCardListingComponent } from './feature/trip/preview-card-listing
     PreviewTripComponent,
     PreviewCardComponent,
     PreviewCardListingComponent
+    ActivityDetailsComponent
 
   ],
   imports: [

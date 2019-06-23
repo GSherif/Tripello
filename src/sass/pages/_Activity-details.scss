@@ -1,0 +1,48 @@
+.card h4 {
+    top: 43% !important;
+    color: $primary-color !important;
+}
+
+.card {
+    background-color: $primary-color !important;
+}
+
+.controls-top {
+    position: relative;
+    left: 41%;
+}
+
+.fa-chevron-left {
+    margin-right: 100px;
+    color: $third-color;
+    background-color: $primary-color;
+    font-size: 25px;
+
+}
+
+.fa-chevron-right {
+    margin-left: 100px;
+    color: $third-color !important;
+    background-color: $primary-color;
+    font-size: 25px;
+}
+
+.ReviewsSection p {
+    font-size: 50px;
+    position: relative;
+    left: 43%;
+    color: $secondry-color;
+    font-family: $primary-font;
+}
+
+.icon-item {
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+    left: 10%;
+
+    .nav-link {
+        color: $secondry-color !important;
+
+    }
+}
