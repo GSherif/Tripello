@@ -59,6 +59,7 @@ import { from } from 'rxjs';
 import { ActivityService } from './feature/activities/activity.service';
 import { AboutComponent } from './core/about/about.component';
 import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.component';
+import { ActivityDetailsComponent } from './feature/activities/activity-details/activity-details.component';
 
 
 
@@ -109,7 +110,8 @@ import { PreviewTripComponent } from './feature/trip/preview-trip/preview-trip.c
     CityActivityDetailsCardComponent,
     CityActivityDetailsCardListingComponent,
     AboutComponent,
-    PreviewTripComponent
+    PreviewTripComponent,
+    ActivityDetailsComponent
 
   ],
   imports: [
