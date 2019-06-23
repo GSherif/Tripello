@@ -1,13 +1,16 @@
 .card {
     position: relative;
+
     .card-text {
         i.fas {
             color: yellow;
         }
+
         span {
             color: grey;
         }
     }
+
     // &:hover {
     //     // margin-top: -0.5rem;
     //     // transition: all 0.3s ease-in-out 0s;
@@ -18,12 +21,14 @@
         left: 5%;
         color: white;
     }
+
     h6 {
         position: absolute;
         top: 66%;
         left: 5%;
         color: white;
     }
+
     i.far {
         position: absolute;
         top: 65%;
@@ -31,4 +36,18 @@
         color: white;
         font-size: 20px;
     }
+}
+
+.hotel-details {
+    margin-right: 2rem;
+    margin-bottom: 10px;
+
+}
+
+.card-title {
+    color: $secondry-color !important;
+}
+
+.card-text-hotel {
+    height: 185px;
 }
