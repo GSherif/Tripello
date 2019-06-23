@@ -34,3 +34,15 @@
     color: $secondry-color;
     font-family: $primary-font;
 }
+
+.icon-item {
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+    left: 10%;
+
+    .nav-link {
+        color: $secondry-color !important;
+
+    }
+}
