@@ -43,6 +43,13 @@ img {
     color: $primary-color !important;
     background-color: $secondry-color !important;
     border-color: $secondry-color !important;
+
+    &:hover {
+        background-color: $third-color !important;
+        color: $secondry-color !important;
+        border-color: $third-color !important;
+
+    }
 }
 
 .Searchcard {
