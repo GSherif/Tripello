@@ -115,7 +115,7 @@ import { ActivityDetailsComponent } from './feature/activities/activity-details/
     AboutComponent,
     PreviewTripComponent,
     PreviewCardComponent,
-    PreviewCardListingComponent
+    PreviewCardListingComponent,
     ActivityDetailsComponent
 
   ],
