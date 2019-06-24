@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { TripService } from '../trip.service';
+import { Trip } from 'src/app/_models/trip';
 
 @Component({
   selector: 'preview-trip',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preview-trip.component.scss']
 })
 export class PreviewTripComponent implements OnInit {
-
-  constructor() { }
+  @Input() previewItems:Trip[]
+  constructor(private tripPreview:TripService) { }
 
   ngOnInit() {
+    if(!this.previewItems){
+      this.previewItems=this.tripPreview.getAllOrdered()
+    }
   }
 
 }

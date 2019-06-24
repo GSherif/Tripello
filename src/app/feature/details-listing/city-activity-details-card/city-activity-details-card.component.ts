@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Trip } from 'src/app/_models/trip';
-import { TripService } from '../../trip/make-trip/trip.service';
+import { TripService } from '../../trip/trip.service';
 
 @Component({
   selector: 'city-activity-details-card',

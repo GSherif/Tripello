@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Country } from 'src/app/_models/country';
 import { Trip } from 'src/app/_models/trip';
-import { TripService } from '../../trip/make-trip/trip.service';
+import { TripService } from '../../trip/trip.service';
 
 @Component({
   selector: 'country-item',
