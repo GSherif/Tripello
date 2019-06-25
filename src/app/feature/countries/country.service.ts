@@ -10,27 +10,27 @@ export class CountryService {
         this.data = [
             {
                 id: 1, image: "../../assets/images/country-china.jpg", name: "China", description: "China, officially the People's Republic of China, is a country in East Asia and the world's most populous country, with a population of around 1.404 billion. Covering approximately 9,600,000 square kilometers, it is the third- or fourth-largest country by total area.",
-                cities: [...this.cities.getByCountryId(1)], rating: 5,tag:'country',
+                cities: [...this.cities.getByCountryId(1)], rating: 5, sliderImages: ["../../../assets/images/slider1-china.jpg", "../../../assets/images/slider2-china.jpg", "../../../assets/images/slider3-china.jpg"], tag: 'country',
             },
             {
                 id: 2, image: "../../assets/images/country-greece.jpg", name: "Greece", description: "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.",
-                cities: [...this.cities.getByCountryId(2)], rating: null,tag:'country',
+                cities: [...this.cities.getByCountryId(2)], rating: null, sliderImages: ["../../../assets/images/slider1-greece.jpg", "../../../assets/images/slider2-greece.jpg", "../../../assets/images/slider3-greece.jpg"], tag: 'country',
             },
             {
                 id: 3, image: "../../assets/images/country-egypt.jpg", name: "Egypt", description: "Egypt is a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined Karnak Temple and Valley of the Kings tombs. The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali Mosque and the Egyptian Museum, a trove of antiquities.",
-                cities: [...this.cities.getByCountryId(3)], rating: null,tag:'country',
+                cities: [...this.cities.getByCountryId(3)], rating: null, sliderImages: ["../../../assets/images/slider1-egypt.jpg", "../../../assets/images/slider2-egypt.jpg", "../../../assets/images/slider3-egypt.jpg"], tag: 'country',
             },
             {
                 id: 4, image: "../../assets/images/country-japan.jpg", name: "Japan", description: "Japan is an island country in East Asia. Located in the Pacific Ocean, it lies off the eastern coast of the Asian continent and stretches from the Sea of Okhotsk in the north to the East China Sea and the Philippine Sea in the south.",
-                cities: [...this.cities.getByCountryId(4)], rating: null,tag:'country',
+                cities: [...this.cities.getByCountryId(4)], rating: null, sliderImages: ["../../../assets/images/slider1-japan.jpg", "../../../assets/images/slider2-japan.jpg", "../../../assets/images/slider3-japan.jpg"], tag: 'country',
             },
             {
                 id: 5, image: "../../assets/images/country-turkey.jpg", name: "Turkey", description: "Turkey is a nation straddling eastern Europe and western Asia with cultural connections to ancient Greek, Persian, Roman, Byzantine and Ottoman empires. Cosmopolitan Istanbul, on the Bosphorus Strait, is home to the iconic Hagia Sophia, with its soaring dome and Christian mosaics, the massive 17th-century Blue Mosque and the circa-1460 Topkapı Palace, former home of sultans. Ankara is Turkey’s modern capital.",
-                cities: [...this.cities.getByCountryId(5)], rating: null,tag:'country',
+                cities: [...this.cities.getByCountryId(5)], rating: null, sliderImages: ["../../../assets/images/slider1-turkey.jpg", "../../../assets/images/slider2-turkey.jpg", "../../../assets/images/slider3-turkey.jpg"], tag: 'country',
             },
             {
                 id: 6, image: "../../assets/images/country-lebanon.jpg", name: "Lebanon", description: "Lebanon, officially known as the Lebanese Republic, is a country in Western Asia. It is bordered by Syria to the north and east and Israel to the south, while Cyprus is west across the Mediterranean Sea.",
-                cities: [...this.cities.getByCountryId(6)], rating: null,tag:'country',
+                cities: [...this.cities.getByCountryId(6)], rating: null, sliderImages: ["../../../assets/images/slider1-lebanon.jpg", "../../../assets/images/slider2-lebanon.jpg", "../../../assets/images/slider3-lebanon.jpg"], tag: 'country',
             }
         ]
     }
