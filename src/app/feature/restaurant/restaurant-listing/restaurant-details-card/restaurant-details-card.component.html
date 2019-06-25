@@ -21,7 +21,7 @@
                         <div class="list-title">
                             <ul class="list-inline list-unstyled">
                                 <li class="list-inline-item">
-                                    <a href="#">
+                                    <a [routerLink]="['/restaurants',resturant.id]">
                                         <h4>{{resturant.name}}</h4>
                                     </a>
                                 </li>
@@ -29,7 +29,8 @@
                             </ul>
                         </div>
                         <div class="list-location">
-                            <a href="#"><i class="fa fa-map-marker"></i><small>{{resturant.address}}</small> </a>
+                            <a [routerLink]="['/restaurants',resturant.id]"><i
+                                    class="fa fa-map-marker"></i><small>{{resturant.address}}</small> </a>
                         </div>
 
                     </div>
