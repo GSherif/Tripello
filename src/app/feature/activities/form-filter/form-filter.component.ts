@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'form-filter',
@@ -7,7 +7,11 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./form-filter.component.scss']
 })
 export class FormFilterComponent implements OnInit {
-  activityForm: FormGroup;
+
+  activityForm = new FormGroup({
+    search: new FormControl('')
+  });
+
   constructor() { }
 
   ngOnInit() {
