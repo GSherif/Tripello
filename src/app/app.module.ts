@@ -135,6 +135,7 @@ import { ActivityDetailsReviewCardListingComponent } from './feature/activities/
       { path: 'cities/:id', component: CitiesComponent },
       { path: 'countries/:id/cities/:id', component: CitiesComponent },
       { path: 'maketrip', component: MakeTripComponent },
+      {path:'maketrip/preview',component:PreviewTripComponent},
       { path: 'restaurants', component: RestaurantListingComponent },
       { path: 'activities', component: ActivitiesComponent },
       { path: 'hotels', component: HotelListingComponent },
