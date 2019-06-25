@@ -8,7 +8,9 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormCityFilterComponent implements OnInit {
 
-  cityDetails: FormGroup;
+  cityform: FormGroup;
+  cityform1: FormGroup;
+
   constructor() { }
 
   ngOnInit() {

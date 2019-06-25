@@ -1,42 +1,42 @@
 <!--Carousel Wrapper-->
+
 <activity-details-slider></activity-details-slider>
-<div class="country-slider__heading p-5">
-    <h2>{{activity.name}}</h2>
-    <!-- <h5>India located in Asia (meri pyaar karti ho)</h5> -->
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star-half-alt"></i>
-</div>
+
+<h5 style="color: #EA7424">{{activity.name}}</h5>
+<br>
 <!--/.Carousel Wrapper-->
 <!-- Classic tabs -->
-<div class="classic-tabs mx-2">
+<div class="classic-tabs mx-2" style="margin-bottom: 150px;">
+
     <ul class="nav tabs-orange" id="myClassicTabOrange" role="tablist">
         <li class="nav-item icon-item">
             <a class="nav-link  waves-light active show" id="profile-tab-classic-orange" data-toggle="tab" href="#profile-classic-orange" role="tab" aria-controls="profile-classic-orange" aria-selected="true"><i
-              class="far fa-question-circle fa-2x pb-2"></i><br>Information</a>
-        </li>
-        <li class="nav-item icon-item">
-            <a class="nav-link waves-light" id="follow-tab-classic-orange" data-toggle="tab" href="#follow-classic-orange" role="tab" aria-controls="follow-classic-orange" aria-selected="false"><i class="fas fa-heart fa-2x pb-2"
-              aria-hidden="true"></i><br>Follow</a>
+                class="far fa-question-circle fa-2x pb-2"></i><br>Information</a>
         </li>
         <li class="nav-item icon-item">
             <a class="nav-link waves-light" id="awesome-tab-classic-orange" data-toggle="tab" href="#awesome-classic-orange" role="tab" aria-controls="awesome-classic-orange" aria-selected="false"><i
-              class="fas fa-location-arrow fa-2x pb-2"></i><br>Location</a>
+                    class="fas fa-location-arrow fa-2x pb-2"></i><br>Location</a>
         </li>
+        <li class="nav-item icon-item">
+            <a class="nav-link waves-light" id="follow-tab-classic-orange" data-toggle="tab" href="#follow-classic-orange" role="tab" aria-controls="follow-classic-orange" aria-selected="false"><i class="fas fa-heart fa-2x pb-2"
+                aria-hidden="true"></i><br>Follow</a>
+        </li>
+
+
     </ul>
+
     <div class="tab-content card" id="myClassicTabContentOrange">
         <div class="tab-pane fade active show" id="profile-classic-orange" role="tabpanel" aria-labelledby="profile-tab-classic-orange">
             <p>{{activity.description}}</p>
         </div>
-        <div class="tab-pane fade" id="follow-classic-orange" role="tabpanel" aria-labelledby="follow-tab-classic-orange">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
-                deserunt mollitia animi, id est laborum</p>
-        </div>
+
 
         <div class="tab-pane fade" id="awesome-classic-orange" role="tabpanel" aria-labelledby="awesome-tab-classic-orange">
             <p>{{activity.address}}</p>
+        </div>
+        <div class="tab-pane fade" id="follow-classic-orange" role="tabpanel" aria-labelledby="follow-tab-classic-orange">
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
     </div>
 
@@ -45,78 +45,19 @@
 <!--Carousel Wrapper-->
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-    <!--Controls-->
-    <div class="ReviewsSection">
-        <p>All Reviews</p>
-    </div>
+
     <div class="controls-top">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-    </div>
-
-    <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active">
-            <div class="row">
-                <activity-details-review-card-listing [reviews]="activity.reviews"></activity-details-review-card-listing>
-
-            </div>
+        <div class="ReviewsSection">
+            <p>All Reviews</p>
         </div>
-        <!--/.First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-            <div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/.Second slide-->
 
     </div>
-    <!--/.Slides-->
+    <div class="container my-5">
+
+        <activity-details-review-card-listing [reviews]="activity.reviews"></activity-details-review-card-listing>
+
+    </div>
 
 </div>
-<!--/.Carousel Wrapper-->
+<!-- <reviews-listing [Reiviews]="activity.reviews"></reviews-listing> -->
+<add-review></add-review>

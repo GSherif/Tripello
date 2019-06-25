@@ -24,10 +24,13 @@ export class CitiesComponent implements OnInit {
   ngOnInit() {
     const id: number = +this.activatedRoute.snapshot.params.id;
     this.city = this.cityService.getById(id);
+    console.log(this.city)
     if (!this.resturant && !this.hotel && !this.activity) {
-      this.resturant = this.resturants.getResturantsByCitId(1);
-      this.hotel = this.hotels.getHotelByCityId(1);
-      this.activity = this.activities.getActivityByCityId(1);
+      this.resturant = this.resturants.getResturantsByCitId(this.city.id);
+      console.log(this.resturant)
+      this.hotel = this.hotels.getHotelByCityId(this.city.id);
+      console.log(this.hotel)
+      this.activity = this.activities.getActivityByCityId(this.city.id);
     }
   }
 }
