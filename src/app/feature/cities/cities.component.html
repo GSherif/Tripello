@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col col-md-3 searchPart">
 
-        <!-- <form-city-filter></form-city-filter> -->
+        <form-city-filter></form-city-filter>
 
     </div>
     <div class="col col-md-9">
@@ -15,19 +15,22 @@
                 <div class="col-md-12">
                     <div>
                         <tabset>
-                            <tab heading="Hotels" id="tab1" >
+                            <tab heading="Hotels" id="tab1">
                                 <!-- <tab heading="Basic title" id="tab1">Basic content</tab> -->
-                                <city-activity-details-card-listing [cityDataArr]="hotel"></city-activity-details-card-listing>
+                                <city-activity-details-card-listing [cityDataArr]="hotel">
+                                </city-activity-details-card-listing>
                                 <!-- <h2 style="color: red">jjjjjjjjjjjjjjjjjj</h2> -->
                             </tab>
                             <tab heading="Resturants">
 
-                                <city-activity-details-card-listing [cityDataArr]="resturant"></city-activity-details-card-listing>
+                                <city-activity-details-card-listing [cityDataArr]="resturant">
+                                </city-activity-details-card-listing>
 
                             </tab>
                             <tab heading="Activities">
 
-                                <city-activity-details-card-listing [cityDataArr]="activity"></city-activity-details-card-listing>
+                                <city-activity-details-card-listing [cityDataArr]="activity">
+                                </city-activity-details-card-listing>
 
                             </tab>
 
