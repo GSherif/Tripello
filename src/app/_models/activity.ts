@@ -1,3 +1,5 @@
+import { Review } from './review';
+
 export interface Activity {
     id: number;
     name: string;
@@ -8,4 +10,5 @@ export interface Activity {
     rating: number;
     fkCityId: number;
     tag: string;
+    reviews:Review[];
 }

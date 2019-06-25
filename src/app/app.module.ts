@@ -63,6 +63,8 @@ import { PreviewCardComponent } from './feature/trip/preview-card/preview-card.c
 import { PreviewCardListingComponent } from './feature/trip/preview-card-listing/preview-card-listing.component';
 import { ActivityDetailsComponent } from './feature/activities/activity-details/activity-details.component';
 import { ActivityDetailsSliderComponent } from './feature/activities/activity-details/activity-details-slider/activity-details-slider.component';
+import { ActivityDetailsReviewCardComponent } from './feature/activities/activity-details/activity-details-review-card/activity-details-review-card.component';
+import { ActivityDetailsReviewCardListingComponent } from './feature/activities/activity-details/activity-details-review-card-listing/activity-details-review-card-listing.component';
 
 
 
@@ -118,7 +120,9 @@ import { ActivityDetailsSliderComponent } from './feature/activities/activity-de
     PreviewCardComponent,
     PreviewCardListingComponent,
     ActivityDetailsComponent,
-    ActivityDetailsSliderComponent
+    ActivityDetailsSliderComponent,
+    ActivityDetailsReviewCardComponent,
+    ActivityDetailsReviewCardListingComponent
 
   ],
   imports: [
