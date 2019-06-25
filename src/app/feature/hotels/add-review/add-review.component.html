@@ -6,8 +6,7 @@
     </div>
     <form class="review-from" action="/action_page.php" [formGroup]="addReviewForm">
         <div class="form-group">
-            <label for="Review">Review</label>
-            <textarea class="form-control" id="Review"></textarea>
+            <p class="text-rate">Your rating </p>
             <div class="rate">
                 <input type="radio" id="star5" name="rate" value="5" />
                 <label for="star5" title="text">5 stars</label>
@@ -20,7 +19,10 @@
                 <input type="radio" id="star1" name="rate" value="1" />
                 <label for="star1" title="text">1 star</label>
             </div>
+            <input type="review" class="form-control" id="Review" aria-describedby="reviewhrlp"
+                placeholder="Write a review">
+
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" style="left: 262px; position: relative;">Submit</button>
     </form>
 </div>

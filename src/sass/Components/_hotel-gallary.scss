@@ -162,10 +162,17 @@
 //     margin: 0;
 //     padding: 0;
 // }
+.text-rate {
+    position: relative;
+    left: 231px;
+    margin: 0px !important;
+}
+
 .rate {
     float: left;
     height: 46px;
     padding: 0 10px;
+    margin-bottom: 15px;
 }
 
 .rate:not(:checked)>input {
@@ -181,6 +188,10 @@
     cursor: pointer;
     font-size: 30px;
     color: #ccc;
+    padding-right: 30px;
+    padding-left: 8px;
+    position: relative;
+    left: 160px;
 }
 
 .rate:not(:checked)>label:before {
