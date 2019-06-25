@@ -1,9 +1,9 @@
-<form class="searchForm" [formGroup]="cityDetails">
+<form class="searchForm" [formGroup]="cityDetails" (ngSubmit)="onSubmit()">
     <h1 class="form-group searchHeader">Search</h1>
-    <form class="form-inline my-2 my-lg-0" [formGroup]="cityDetails">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-            style="margin-left: 2rem;">
-    </form>
+    <!-- <form class="form-inline my-2 my-lg-0"> -->
+    <input class="form-control mr-sm-2 my-2 my-lg-0" type="search" placeholder="Search" aria-label="Search"
+        style="margin-left: 2rem;" formControlName="search">
+    <!-- </form> -->
 
     <!-- -->
     <div class="form-group">

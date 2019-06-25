@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'form-city-filter',
@@ -8,10 +8,16 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormCityFilterComponent implements OnInit {
 
-  cityDetails: FormGroup;
+  cityDetails = new FormGroup({
+    search: new FormControl('')
+  });
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+    console.log(1)
   }
 
 }
