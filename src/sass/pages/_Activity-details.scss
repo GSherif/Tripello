@@ -9,8 +9,10 @@
 
 .controls-top {
     position: absolute;
-    left: 41%;
+    left: 43%;
+    top: -105px;
     bottom: 37%;
+
 }
 
 #myClassicTabContentOrange {
@@ -46,8 +48,8 @@
 
 .ReviewsSection p {
     font-size: 50px;
-    position: relative;
-    left: 43%;
+    // position: relative;
+    // left: 43%;
     color: $secondry-color;
     font-family: $primary-font;
 }
