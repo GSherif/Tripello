@@ -1,5 +1,11 @@
 <div class="hotel-details ">
     <div class="card">
+        <div class="AddToTrip-btn" (click)="OnAdd()">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="icon-text">
+            <p>Add To My Trip</p>
+        </div>
         <img [src]="hotel.image" style="width: 100%; height: 200px;" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{hotel.name}}</h5>

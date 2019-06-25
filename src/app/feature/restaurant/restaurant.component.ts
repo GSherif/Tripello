@@ -12,7 +12,7 @@ export class RestaurantComponent implements OnInit {
   constructor(private resturantt:ResturantService) { }
 
   ngOnInit() {
-    this.resturant=this.resturantt.getResturantById()
+    this.resturant=this.resturantt.getResturantById(5)
     console.log(this.resturant)
   }
 
