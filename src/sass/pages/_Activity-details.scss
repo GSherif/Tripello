@@ -8,8 +8,19 @@
 }
 
 .controls-top {
-    position: relative;
+    position: absolute;
     left: 41%;
+    bottom: 37%;
+}
+
+.btn-prev {
+    position: absolute;
+    right: 530px;
+}
+
+.btn-next {
+    position: relative;
+    left: 650px;
 }
 
 .fa-chevron-left {
@@ -45,4 +56,10 @@
         color: $secondry-color !important;
 
     }
+}
+
+.carousel-inner {
+    width: 90% !important;
+    position: relative !important;
+    left: 5.5% !important;
 }
