@@ -10,11 +10,14 @@ import { TripService } from '../../trip/trip.service';
 export class CityActivityDetailsCardComponent implements OnInit {
   @Input() cityData: any;
   trip: Trip;
-  constructor(private tripp: TripService) { }
+  constructor(private tripp: TripService) { 
+    this.cityData=0;
+  }
 
   ngOnInit() {
-    console.log(this.cityData)
+    console.log(this.cityData);
   }
+  
 
   OnAdd() {
     // this.cityData;

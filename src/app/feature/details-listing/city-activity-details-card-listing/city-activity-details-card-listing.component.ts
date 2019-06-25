@@ -10,6 +10,7 @@ export class CityActivityDetailsCardListingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.cityDataArr)
   }
 
 }

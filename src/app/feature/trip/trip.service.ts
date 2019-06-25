@@ -12,29 +12,29 @@ import { CityService } from '../cities/city.service';
 import { Activity } from 'src/app/_models/activity';
 
 @Injectable()
-export class TripService {
+export class TripService{
+    
+    data:Trip;
+    dataOrdered:any[]=[];
+    countries:Country[];
+    resturants:Resturant[];
+    hotels:Hotel[];
+    cities:City[];
+    activities:Activity[];
+    constructor(private hotel:HotelService,private country:CountryService ,private resturant:ResturantService,private city:CityService){
 
-    data: Trip;
-    dataOrdered: any[] = [];
-    countries: Country[];
-    resturants: Resturant[];
-    hotels: Hotel[];
-    cities: City[];
-    activities: Activity[];
-    constructor(private hotel: HotelService, private country: CountryService, private resturant: ResturantService, private city: CityService) {
-
-        this.countries = this.country.getCountriesByIds([1, 3, 5]);
+        // this.countries=this.country.getCountriesByIds([1,3,5]);
         // this.hotels= this.hotel.getHotelByCityId(1);
-        this.resturants = this.resturant.getResturantsByCitId(1);
-        this.cities = this.city.getByCountryIds([1, 3, 5]);
+        // this.resturants=this.resturant.getResturantsByCitId(1);
+        // this.cities=this.city.getByCountryIds([1,3,5]);
         console.log(this.cities)
         console.log(this.countries);
 
-        this.data = { id: 1, cities: [...this.cities], countries: [...this.countries], resturants: [...this.resturants], hotels: [], activities: [], type: "" };
-
-        this.dataOrdered = [];
-
-
+       this.data={id:1,cities:[],countries:[],resturants:[],hotels:[],activities:[],type:""};
+        
+       this.dataOrdered=[];
+          
+     
     }
 
     getAll(): Trip {
