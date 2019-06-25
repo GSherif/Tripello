@@ -8,8 +8,25 @@
 }
 
 .controls-top {
-    position: relative;
+    position: absolute;
     left: 41%;
+    bottom: 37%;
+}
+
+#myClassicTabContentOrange {
+    margin-left: 62px;
+    margin-right: 52px;
+    padding: 10px;
+}
+
+.btn-prev {
+    position: absolute;
+    right: 530px;
+}
+
+.btn-next {
+    position: relative;
+    left: 650px;
 }
 
 .fa-chevron-left {
@@ -45,4 +62,10 @@
         color: $secondry-color !important;
 
     }
+}
+
+.carousel-inner-card {
+    width: 90% !important;
+    position: relative !important;
+    left: 5.5% !important;
 }

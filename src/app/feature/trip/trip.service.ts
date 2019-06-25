@@ -37,15 +37,15 @@ export class TripService{
      
     }
 
-    getAll():Trip{
+    getAll(): Trip {
         return this.data;
     }
-    getAllOrdered():any[]{
+    getAllOrdered(): any[] {
         return this.dataOrdered;
     }
     // getById(id:number):Trip{
     //     return this.data.find(el=>el.id===id);
     // }
 
-  
+
 }

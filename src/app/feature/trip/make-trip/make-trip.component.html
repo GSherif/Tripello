@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid mt-lg">
     <!--headers-->
     <div class="row manage-trip manage-trip__headers-row">
         <div class="col-2">
@@ -35,11 +35,12 @@
                     </app-dropdown>
 
                 </div>
-                <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="right: auto;bottom: auto;"></i>
+                <a class="action-btn  manage-trip--btn-plus-color mr-3" [routerLink]="['/countries']">
+                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"
+                        style="right: auto;bottom: auto;"></i>
                 </a>
 
-                <div class="col-1 manage-trip__dropdown-lable">
+                <div class="col-1 manage-trip__dropdown-lable ml-3">
                     <label class="manage-trip__dropdown-text">City</label>
                 </div>
                 <div class="col-3">
@@ -49,8 +50,9 @@
 
                     </app-dropdown>
                 </div>
-                <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="right: auto;bottom: auto;"></i>
+                <a class="action-btn  manage-trip--btn-plus-color">
+                    <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"
+                        style="right: auto;bottom: auto;"></i>
                 </a>
             </div>
 
@@ -60,23 +62,26 @@
                 <div>
                     <tabset>
                         <tab heading="Hotels" id="tab1">
-                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
+                            <a class="action-btn  manage-trip--btn-plus-color" [routerLink]="['/hotels']">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"
+                                    style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
                             </a>
                             <trip-card-listing [dataa]="trip['hotels']"></trip-card-listing>
 
                         </tab>
                         <tab heading="Resturants">
-                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
+                            <a class="action-btn  manage-trip--btn-plus-color" [routerLink]="['/restaurants']">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"
+                                    style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
                             </a>
                             <trip-card-listing [dataa]="trip['resturants']"></trip-card-listing>
 
                         </tab>
 
                         <tab heading="Activities">
-                            <a class="action-btn  manage-trip--btn-plus-color" href="#">
-                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon" style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
+                            <a class="action-btn  manage-trip--btn-plus-color" [routerLink]="['/activities']">
+                                <i class="fas fa-plus manage-trip--icons manage-trip--plus-icon"
+                                    style="margin-left: 51.7rem; bottom: 56px;right: 0;"></i>
                             </a>
                             <trip-card-listing [dataa]="trip['activities']"></trip-card-listing>
                         </tab>
@@ -90,10 +95,12 @@
         <!--order section-->
         <div class="col-2 manage-trip manage-trip__order-day-section ">
 
-            <span class="btn btn-info manage-trip__order-day manage-trip__btn-day" *ngFor="let item of orderTrip">{{item.name}} </span>
+            <span class="btn btn-info manage-trip__order-day manage-trip__btn-day"
+                *ngFor="let item of orderTrip">{{item.name}} </span>
 
         </div>
 
     </div>
 </div>
-<button type="button" class="btn btn-info manage-trip__order-day manage-trip__btn-day" style="margin: 0 auto;display: flex;margin-bottom: 14rem;">Preview Your Trip</button>
+<button type="button" class="btn btn-info manage-trip__order-day manage-trip__btn-day"
+    style="margin: 0 auto;display: flex;margin-bottom: 14rem;">Preview Your Trip</button>
