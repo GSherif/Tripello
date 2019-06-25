@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.loginForm);
+    // console.log(this.loginForm);
     if (this.loginForm.valid) {
       if (this.userService.getByEmailAndPassword(this.loginForm.value['email'], this.loginForm.value['password']) == true) {
         this.router.navigate(['/maketrip']);
