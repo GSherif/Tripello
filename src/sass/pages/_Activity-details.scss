@@ -13,6 +13,12 @@
     bottom: 37%;
 }
 
+#myClassicTabContentOrange {
+    margin-left: 62px;
+    margin-right: 52px;
+    padding: 10px;
+}
+
 .btn-prev {
     position: absolute;
     right: 530px;
@@ -58,7 +64,7 @@
     }
 }
 
-.carousel-inner {
+.carousel-inner-card {
     width: 90% !important;
     position: relative !important;
     left: 5.5% !important;
