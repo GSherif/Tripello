@@ -24,7 +24,9 @@
                             </ul>
                         </div>
                         <div class="list-location">
-                            <a href="#"><i class="fa fa-map-marker"></i><small>{{cityData.address}}</small> </a>
+                            <a [routerLink]="[ 'activities',cityData.id]">
+                                <i class="fa fa-map-marker"></i><small>{{cityData.address}}</small>
+                            </a>
                         </div>
                         <!-- <button href="#" class="btn btn--primary" (click)="OnAdd()">Add To Trip</button> -->
 

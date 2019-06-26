@@ -10,25 +10,25 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-3">
-                        <img [src]="resturant.image" style="width: 100% ; height:100%">
+                        <img [src]="resturantCityData.image" style="width: 100% ; height:100%">
                     </div>
                     <div class="col-md-6  card-body">
                         <div class="list-title">
                             <ul class="list-inline list-unstyled">
                                 <li class="list-inline-item">
-                                    <a [routerLink]="['/restaurant',resturant.id]">
-                                        <!-- [routerLink]="['cities', city.id]" -->
-                                        {{resturant.name}}
-                                        <!-- <h4></h4> -->
+                                    <a [routerLink]="['/restaurants',resturantCityData.id]">
+                                        <h4>{{resturantCityData.name}}</h4>
                                     </a>
                                 </li>
 
                             </ul>
                         </div>
                         <div class="list-location">
-                            <a [routerLink]="['restaurant',resturant.id]"><i
-                                    class="fa fa-map-marker"></i><small>{{resturant.address}}</small> </a>
+                            <a [routerLink]="[ '/restaurants',resturantCityData.id]">
+                                <i class="fa fa-map-marker"></i><small>{{resturantCityData.address}}</small>
+                            </a>
                         </div>
+                        <!-- <button href="#" class="btn btn--primary" (click)="OnAdd()">Add To Trip</button> -->
 
                     </div>
 

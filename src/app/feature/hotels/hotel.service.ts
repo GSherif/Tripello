@@ -135,7 +135,8 @@ export class HotelService {
         return this.dataa;
     }
     getHotelById(id: number): Hotel {
-        return this.dataa[id];
+        // return this.dataa[id];
+        return this.dataa.find(a=>a.id===id)
     }
     getHotelByCityId(cityid: number): Hotel[] {
         return this.dataa.filter(c => c.fkCityId === cityid);

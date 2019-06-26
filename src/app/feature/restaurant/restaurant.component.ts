@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Resturant } from 'src/app/_models/resturant';
 import { ResturantService } from './resturant.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'restaurant',
@@ -9,10 +10,12 @@ import { ResturantService } from './resturant.service';
 })
 export class RestaurantComponent implements OnInit {
 @Input() resturant:Resturant;
-  constructor(private resturantt:ResturantService) { }
+  // activatedRoute: any;
+  constructor(private resturantt:ResturantService,private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.resturant=this.resturantt.getResturantById(5)
+    const id: number = +this.activatedRoute.snapshot.params.id;
+    this.resturant=this.resturantt.getResturantById(id)
     console.log(this.resturant)
   }
 

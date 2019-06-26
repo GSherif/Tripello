@@ -14,13 +14,15 @@
                     <div>
                         <tabset>
                             <tab heading="Tours">
-                                <city-activity-details-card-listing [cityDataArr]="Tours">
-                                </city-activity-details-card-listing>
-
+                                <!-- <city-activity-details-card-listing [cityDataArr]="Tours">
+                                </city-activity-details-card-listing> -->
+                                <city-details-activity-card-listing [activityCityDataArr]="Tours"></city-details-activity-card-listing>
                             </tab>
                             <tab heading="Activities">
-                                <city-activity-details-card-listing [cityDataArr]="Activities">
-                                </city-activity-details-card-listing>
+                                <!-- <city-activity-details-card-listing [cityDataArr]="Activities">
+                                </city-activity-details-card-listing> -->
+
+                                <city-details-activity-card-listing [activityCityDataArr]="Activities"></city-details-activity-card-listing>
                             </tab>
                             <!-- <tab heading="Canoeing">
                                 <city-activity-details-card-listing [cityDataArr]="canoeing">

@@ -65,6 +65,13 @@ import { ActivityDetailsComponent } from './feature/activities/activity-details/
 import { ActivityDetailsSliderComponent } from './feature/activities/activity-details/activity-details-slider/activity-details-slider.component';
 import { ActivityDetailsReviewCardComponent } from './feature/activities/activity-details/activity-details-review-card/activity-details-review-card.component';
 import { ActivityDetailsReviewCardListingComponent } from './feature/activities/activity-details/activity-details-review-card-listing/activity-details-review-card-listing.component';
+import { CityDetailsHotelCardComponent } from './feature/hotels/city-details-hotel-card/city-details-hotel-card.component';
+import { CityDetailsHotelCardListingComponent } from './feature/hotels/city-details-hotel-card-listing/city-details-hotel-card-listing.component';
+import { CityDetailsResturantCardListingComponent } from './feature/restaurant/city-details-resturant-card-listing/city-details-resturant-card-listing.component';
+import { CityDetailsResturantCardComponent } from './feature/restaurant/city-details-resturant-card/city-details-resturant-card.component';
+import { CityDetailsActivityCardComponent } from './feature/activities/city-details-activity-card/city-details-activity-card.component';
+import { CityDetailsActivityCardListingComponent } from './feature/activities/city-details-activity-card-listing/city-details-activity-card-listing.component';
+
 
 
 
@@ -122,7 +129,14 @@ import { ActivityDetailsReviewCardListingComponent } from './feature/activities/
     ActivityDetailsComponent,
     ActivityDetailsSliderComponent,
     ActivityDetailsReviewCardComponent,
-    ActivityDetailsReviewCardListingComponent
+    ActivityDetailsReviewCardListingComponent,
+   
+    CityDetailsHotelCardComponent,
+    CityDetailsHotelCardListingComponent,
+    CityDetailsResturantCardListingComponent,
+    CityDetailsResturantCardComponent,
+    CityDetailsActivityCardComponent,
+    CityDetailsActivityCardListingComponent
 
   ],
   imports: [
@@ -137,11 +151,12 @@ import { ActivityDetailsReviewCardListingComponent } from './feature/activities/
       { path: 'maketrip', component: MakeTripComponent },
       { path: 'maketrip/preview', component: PreviewTripComponent },
       { path: 'restaurants', component: RestaurantListingComponent },
-      { path: 'restaurants/:id', component: RestaurantComponent },
+      { path: 'restaurants/:id', component:  RestaurantComponent },
       { path: 'activities', component: ActivitiesComponent },
       { path: 'activities/:id', component: ActivityDetailsComponent},
       { path: 'hotels', component: HotelListingComponent },
-      { path: 'hotels/:id', component: HotelDetailsCardComponent },
+      { path: 'hotels/:id', component: HotelsComponent },
+      // { path: 'countries/:id/cities/:id/hotels/:id', component: HotelsComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'login', component: LoginComponent },
